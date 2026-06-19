@@ -1,0 +1,2233 @@
+{
+  "c845185b-5da3-41e0-a8f3-e2105063eac4": {
+    "id": "c845185b-5da3-41e0-a8f3-e2105063eac4",
+    "title": "YouTube Lecture (OZoycIC2JTM)",
+    "url": "https://www.youtube.com/watch?v=OZoycIC2JTM",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T11:29:06.775933",
+    "status": "complete",
+    "transcript": "This is a demo transcript for YouTube video OZoycIC2JTM.\n        \n        In a real deployment, this would fetch the actual YouTube transcript using youtube-transcript-api.\n        The video URL was: https://www.youtube.com/watch?v=OZoycIC2JTM\n        \n        Machine learning is transforming how we interact with technology. Neural networks, inspired by \n        the human brain, can recognize patterns in vast amounts of data. Deep learning, a subset of ML,\n        uses multiple layers of neural networks to learn hierarchical representations.\n        \n        Computer vision applications include image recognition, object detection, and facial recognition.\n        Natural language processing enables machines to understand and generate human language.\n        \n        The future of AI includes multimodal models that can process text, images, audio, and video simultaneously.\n        Ethical AI development ensures fairness, transparency, and accountability in AI systems.",
+    "notes": "## Introduction to Machine Learning\n### Definition and Inspiration\nMachine learning is a field of study that enables machines to interact with technology in a more intelligent way. The concept of **neural networks** is inspired by the **human brain**, which can recognize patterns in vast amounts of data.\n\n### Key Concepts\n* **Deep learning**: a subset of machine learning that uses multiple layers of neural networks to learn hierarchical representations\n* **Pattern recognition**: the ability of neural networks to identify patterns in large datasets\n* **Machine learning applications**: various fields where machine learning is applied, including computer vision and natural language processing\n\n## Machine Learning Applications\n### Computer Vision\nComputer vision applications include:\n* **Image recognition**: the ability of machines to identify objects within images\n* **Object detection**: the ability of machines to detect specific objects within images\n* **Facial recognition**: the ability of machines to identify individuals based on their facial features\n\n### Natural Language Processing\n* **Language understanding**: the ability of machines to comprehend human language\n* **Language generation**: the ability of machines to generate human-like language\n\n## The Future of AI\n### Multimodal Models\nThe future of AI includes the development of **multimodal models** that can process:\n| Modality | Description |\n| --- | --- |\n| Text | Written language |\n| Images | Visual data |\n| Audio | Sound waves |\n| Video | Moving images with sound |\n\n### Ethical AI Development\n* **Fairness**: ensuring that AI systems are unbiased and fair\n* **Transparency**: providing clear explanations of AI decision-making processes\n* **Accountability**: holding AI systems responsible for their actions\n\n## Exam Tips\n* Be sure to understand the difference between **machine learning** and **deep learning**\n* Familiarize yourself with various **machine learning applications**, including computer vision and natural language processing\n* Consider the **ethical implications** of AI development and the importance of fairness, transparency, and accountability in AI systems.",
+    "flashcards": null,
+    "quiz": [
+      {
+        "question": "What is transforming how we interact with technology?",
+        "options": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Computer Vision"
+        ],
+        "correct": 1,
+        "explanation": "Machine learning is mentioned in the transcript as transforming how we interact with technology."
+      },
+      {
+        "question": "What is a subset of Machine Learning?",
+        "options": [
+          "Neural Networks",
+          "Deep Learning",
+          "Computer Vision",
+          "Natural Language Processing"
+        ],
+        "correct": 1,
+        "explanation": "Deep learning is mentioned in the transcript as a subset of Machine Learning."
+      },
+      {
+        "question": "What are some applications of Computer Vision?",
+        "options": [
+          "Image Recognition, Object Detection, Facial Recognition",
+          "Natural Language Processing, Text Generation",
+          "Speech Recognition, Sentiment Analysis",
+          "None of the above"
+        ],
+        "correct": 0,
+        "explanation": "Image recognition, object detection, and facial recognition are mentioned in the transcript as applications of Computer Vision."
+      },
+      {
+        "question": "What enables machines to understand and generate human language?",
+        "options": [
+          "Computer Vision",
+          "Natural Language Processing",
+          "Deep Learning",
+          "Machine Learning"
+        ],
+        "correct": 1,
+        "explanation": "Natural language processing is mentioned in the transcript as enabling machines to understand and generate human language."
+      },
+      {
+        "question": "What is included in the future of AI models?",
+        "options": [
+          "Unimodal models",
+          "Multimodal models",
+          "Deep Learning models",
+          "Neural Network models"
+        ],
+        "correct": 1,
+        "explanation": "Multimodal models are mentioned in the transcript as the future of AI, which can process text, images, audio, and video simultaneously."
+      },
+      {
+        "question": "What does Ethical AI development ensure in AI systems?",
+        "options": [
+          "Fairness, Transparency, Accountability",
+          "Security, Privacy, Efficiency",
+          "Scalability, Reliability, Usability",
+          "None of the above"
+        ],
+        "correct": 0,
+        "explanation": "Fairness, transparency, and accountability are mentioned in the transcript as being ensured by Ethical AI development."
+      },
+      {
+        "question": "What is inspired by the human brain in Machine Learning?",
+        "options": [
+          "Neural Networks",
+          "Deep Learning",
+          "Computer Vision",
+          "Natural Language Processing"
+        ],
+        "correct": 0,
+        "explanation": "Neural networks are mentioned in the transcript as being inspired by the human brain."
+      },
+      {
+        "question": "What is used by Deep Learning to learn hierarchical representations?",
+        "options": [
+          "Single layer of neural networks",
+          "Multiple layers of neural networks",
+          "Single layer of decision trees",
+          "Multiple layers of decision trees"
+        ],
+        "correct": 1,
+        "explanation": "Multiple layers of neural networks are mentioned in the transcript as being used by Deep Learning to learn hierarchical representations."
+      }
+    ],
+    "summary": "**Overview**: Machine learning is revolutionizing technology interactions by recognizing patterns in large datasets using neural networks. Deep learning, a subset of machine learning, enables hierarchical representations through multiple layers of neural networks. This technology has various applications, including computer vision and natural language processing.\n\n**Key topics covered**:\n* Neural networks and deep learning\n* Computer vision applications (image recognition, object detection, facial recognition)\n* Natural language processing\n* Future of AI (multimodal models, ethical AI development)\n\n**Most important concepts to remember**: The ability of neural networks to recognize patterns, the role of deep learning in hierarchical representations, and the importance of ethical AI development.\n\n**Suggested study focus areas**: Focus on understanding the basics of neural networks and deep learning, and explore the applications of computer vision and natural language processing. Additionally, consider the ethical implications of AI development to ensure a well-rounded understanding of the subject.",
+    "topics": [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Multimodal Models",
+      "Ethical AI Development"
+    ],
+    "duration": 600,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": false,
+      "quiz": true,
+      "summary": true
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [],
+      "mastered_count": 0,
+      "completed": false
+    },
+    "segments": [
+      {
+        "start": 0,
+        "end": 10,
+        "text": "Demo transcript for video OZoycIC2JTM"
+      },
+      {
+        "start": 10,
+        "end": 30,
+        "text": "Machine learning is transforming how we interact with technology."
+      }
+    ]
+  },
+  "fb53a389-6696-4d31-bff5-ab94aaeed663": {
+    "id": "fb53a389-6696-4d31-bff5-ab94aaeed663",
+    "title": "YouTube: https://youtu.be/jmmW0F0biz0?si=Cp833uy3lsOmfGa1...",
+    "url": "https://youtu.be/jmmW0F0biz0?si=Cp833uy3lsOmfGa1",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T12:32:47.916647",
+    "status": "error",
+    "transcript": null,
+    "notes": null,
+    "flashcards": null,
+    "quiz": null,
+    "summary": null,
+    "topics": [],
+    "duration": 0,
+    "progress": {
+      "transcript": false,
+      "notes": false,
+      "flashcards": false,
+      "quiz": false
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [],
+      "mastered_count": 0,
+      "completed": false
+    },
+    "error": "400: Could not retrieve transcript for YouTube video jmmW0F0biz0. Details: 'FetchedTranscriptSnippet' object is not subscriptable"
+  },
+  "3337b8d0-18e5-43bc-9f43-6fae647ddf0d": {
+    "id": "3337b8d0-18e5-43bc-9f43-6fae647ddf0d",
+    "title": "YouTube Lecture (jmmW0F0biz0)",
+    "url": "https://youtu.be/jmmW0F0biz0?si=Cp833uy3lsOmfGa1",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T12:38:21.648691",
+    "status": "complete",
+    "transcript": "Here are five things to know about neural \nnetworks in under five minutes. Number one:   neural networks are composed of node layers. There \nis an input node layer, there is a hidden layer,   and there is an output layer. And these neural \nnetworks reflect the behavior of the human brain,   allowing computer programs to recognize patterns \nand solve common problems in the fields of AI and   deep learning. In fact, we should be describing \nthis as an artificial neural network, or an  ANN, to distinguish it from the very un-artificial \nneural network that's operating in our heads. Now,   think of each node, or artificial neuron, as its own \nlinear regression model. That's number two.   Linear regression is a mathematical model that's \nused to predict future events. The weights of the   connections between the nodes determines how much \ninfluence each input has on the output. So each   node is composed of input data, weights, a bias, \nor a threshold, and then an output. Now data is   passed from one layer in the neural network to the \nnext in what is known as a feed forward network --  number three. To illustrate this, let's consider \nwhat a single node in our neural network might   look like to decide -- should we go surfing. The \ndecision to go or not is our predicted outcome   or known as our yhat. Let's assume there are \nthree factors influencing our decision. Are the   wave's good, 1 for yes or 0 for no.  The waves \nare pumping, so x1 equals 1, 1 for yes.  Is the   lineup empty, well unfortunately not, so that gets a \n0. And then let's consider is it shark-free out   there, that's x3 and yes, no shark attacks have \nbeen reported. Now to each decision we assign a   weight based on its importance on a scale of 0 \nto 5. So let's say that the waves, we're going to   score that one, eh, so this is important, let's \ngive it a 5. And for the crowds, that's w2.   Eh, not so important, we'll give that a 2. \nAnd sharks, well, we'll give that a score of a   4. Now we can plug in these values into the \nformula to get the desired output. So yhat equals   (1 * 5) + (0 * 2) + (1 * 4), then \nminus 3, that's our threshold, and that gives us   a value of 6. Six is greater than 0, so the \noutput of this node is 1 -- we're going surfing.   And if we adjust the weights or the threshold, \nwe can achieve different outcomes.  Number four.  Well, yes, but but but number four, neural networks \nrely on training data to learn and improve their   accuracy over time. We leverage supervised learning \non labeled datasets to train the algorithm.   As we train the model, we want to evaluate its \naccuracy using something called a cost function. Ultimately, the goal is to minimize our cost function to \nensure the correctness of fit for any given   observation, and that happens as the model adjusts \nits weights and biases to fit the training data   set, through what's known as gradient descent, \nallowing the model to determine the direction   to take to reduce errors, or more specifically, \nminimize the cost function. And then finally,   number five: there are multiple types of neural \nnetworks beyond the feed forward neural network   that we've described here. For example, there are \nconvolutional neural networks, known as CNNs, which   have a unique architecture that's well suited \nfor identifying patterns like image recognition.   And there are recurrent neural networks, or RNNs, \nwhich are identified by their feedback loops and   RNNs are primarily leveraged using time series \ndata to make predictions about future events like   sales forecasting.  So, five things in five minutes.    To learn more about neural networks, check out these videos. Thanks for watching. If you have any questions, please drop us a line below. And  if you want to see more videos like this \nin the future, please Like and Subscribe.",
+    "notes": "## Introduction to Neural Networks\nNeural networks are a fundamental concept in the fields of Artificial Intelligence (AI) and Deep Learning. They are composed of node layers that reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems.\n\n### Composition of Neural Networks\n* **Input Node Layer**: receives input data\n* **Hidden Layer**: processes input data\n* **Output Layer**: generates output\n* **Artificial Neural Network (ANN)**: distinguishes from the natural neural network in the human brain\n\n## Key Concepts in Neural Networks\n* Each node, or **artificial neuron**, can be thought of as its own **linear regression model**\n* **Linear Regression**: a mathematical model used to predict future events\n* **Weights**: determine the influence of each input on the output\n* **Bias** or **Threshold**: adjusts the output of each node\n* **Feed Forward Network**: data is passed from one layer to the next\n\n## Example of a Neural Network Node\nTo illustrate how a neural network node works, consider the decision to go surfing based on three factors:\n| Factor | Value | Weight |\n| --- | --- | --- |\n| Waves are good | 1 | 5 |\n| Lineup is empty | 0 | 2 |\n| Shark-free | 1 | 4 |\nThe output of the node is calculated using the formula: **yhat = (1 * 5) + (0 * 2) + (1 * 4) - 3** = 6, which is greater than 0, so the output is **1** (go surfing)\n\n## Training Neural Networks\n* **Training Data**: neural networks rely on labeled datasets to learn and improve accuracy\n* **Supervised Learning**: used to train the algorithm\n* **Cost Function**: evaluates the accuracy of the model\n* **Gradient Descent**: adjusts the weights and biases to minimize the cost function and improve the model's fit\n\n## Important Terms\n* **Artificial Neural Network (ANN)**\n* **Linear Regression**\n* **Feed Forward Network**\n* **Gradient Descent**\n* **Cost Function**\n\n## Exam Tips\n* Understand the composition of neural networks, including input, hidden, and output layers\n* Know how each node works, including the role of weights, bias, and threshold\n* Be able to explain the concept of a feed forward network\n* Understand the importance of training data and supervised learning in neural networks\n* Be familiar with key terms, including cost function and gradient descent.",
+    "flashcards": [
+      {
+        "front": "What are neural networks composed of?",
+        "back": "Neural networks are composed of node layers, including an input node layer, a hidden layer, and an output layer.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is an artificial neural network (ANN)?",
+        "back": "An artificial neural network (ANN) is a computer program that reflects the behavior of the human brain, allowing it to recognize patterns and solve common problems in AI and deep learning.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is each node in a neural network?",
+        "back": "Each node, or artificial neuron, is its own linear regression model, composed of input data, weights, a bias or threshold, and an output.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "How do neural networks process data?",
+        "back": "Neural networks process data in a feed forward network, where data is passed from one layer to the next.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is linear regression?",
+        "back": "Linear regression is a mathematical model used to predict future events, and is used in each node of a neural network.",
+        "topic": "Linear Regression"
+      },
+      {
+        "front": "How are weights determined in a neural network?",
+        "back": "The weights of the connections between nodes are determined based on the importance of each input, and are used to calculate the output of each node.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the purpose of training data in neural networks?",
+        "back": "Neural networks rely on training data to learn and improve their accuracy over time, using supervised learning on labeled datasets.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the goal of the cost function in neural networks?",
+        "back": "The goal of the cost function is to minimize the error between the predicted output and the actual output, allowing the model to adjust its weights and biases to fit the training data.",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is gradient descent?",
+        "back": "Gradient descent is a method used by neural networks to adjust their weights and biases to minimize the cost function, allowing the model to determine the direction to take to reduce errors.",
+        "topic": "Neural Networks"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What are the three main layers that compose a neural network?",
+        "options": [
+          "Input, Hidden, Output",
+          "Input, Output, Feedback",
+          "Hidden, Output, Input",
+          "Feedback, Hidden, Output"
+        ],
+        "correct": 0,
+        "explanation": "A neural network is composed of an input node layer, a hidden layer, and an output layer, which reflect the behavior of the human brain."
+      },
+      {
+        "question": "What is each node in a neural network comparable to?",
+        "options": [
+          "A decision tree model",
+          "A linear regression model",
+          "A clustering model",
+          "A random forest model"
+        ],
+        "correct": 1,
+        "explanation": "Each node, or artificial neuron, can be thought of as its own linear regression model."
+      },
+      {
+        "question": "How do neural networks pass data from one layer to the next?",
+        "options": [
+          "Through a feedback loop",
+          "Through a feed forward network",
+          "Through a recurrent network",
+          "Through a convolutional network"
+        ],
+        "correct": 1,
+        "explanation": "Data is passed from one layer in the neural network to the next in what is known as a feed forward network."
+      },
+      {
+        "question": "What determines the influence of each input on the output in a neural network?",
+        "options": [
+          "The bias or threshold",
+          "The weights of the connections between the nodes",
+          "The number of hidden layers",
+          "The type of activation function used"
+        ],
+        "correct": 1,
+        "explanation": "The weights of the connections between the nodes determine how much influence each input has on the output."
+      },
+      {
+        "question": "How do neural networks learn and improve their accuracy over time?",
+        "options": [
+          "Through unsupervised learning on unlabeled datasets",
+          "Through supervised learning on labeled datasets",
+          "Through reinforcement learning",
+          "Through transfer learning"
+        ],
+        "correct": 1,
+        "explanation": "Neural networks rely on training data to learn and improve their accuracy over time, leveraging supervised learning on labeled datasets."
+      },
+      {
+        "question": "What is the goal of the cost function in training a neural network?",
+        "options": [
+          "To maximize the error",
+          "To minimize the cost function",
+          "To adjust the weights and biases",
+          "To evaluate the model's performance"
+        ],
+        "correct": 1,
+        "explanation": "The goal is to minimize the cost function to ensure the correctness of fit for any given observation."
+      },
+      {
+        "question": "What algorithm is used to adjust the weights and biases of a neural network during training?",
+        "options": [
+          "Gradient ascent",
+          "Gradient descent",
+          "Linear regression",
+          "Decision trees"
+        ],
+        "correct": 1,
+        "explanation": "The model adjusts its weights and biases to fit the training data set through what's known as gradient descent."
+      }
+    ],
+    "summary": null,
+    "topics": [],
+    "duration": 261.28,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": true,
+      "quiz": true
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [
+        0
+      ],
+      "mastered_count": 1,
+      "completed": false
+    },
+    "segments": [
+      {
+        "start": 0.32,
+        "end": 6.0,
+        "text": "Here are five things to know about neural \nnetworks in under five minutes. Number one:  "
+      },
+      {
+        "start": 6.0,
+        "end": 15.92,
+        "text": "neural networks are composed of node layers. There \nis an input node layer, there is a hidden layer,  "
+      },
+      {
+        "start": 16.48,
+        "end": 26.08,
+        "text": "and there is an output layer. And these neural \nnetworks reflect the behavior of the human brain,  "
+      },
+      {
+        "start": 26.08,
+        "end": 30.639999999999997,
+        "text": "allowing computer programs to recognize patterns \nand solve common problems in the fields of AI and  "
+      },
+      {
+        "start": 30.64,
+        "end": 37.671,
+        "text": "deep learning. In fact, we should be describing \nthis as an artificial neural network, or an  ANN,"
+      },
+      {
+        "start": 37.671,
+        "end": 44.08,
+        "text": "to distinguish it from the very un-artificial \nneural network that's operating in our heads. Now,  "
+      },
+      {
+        "start": 44.08,
+        "end": 51.28,
+        "text": "think of each node, or artificial neuron, as its own \nlinear regression model. That's number two.  "
+      },
+      {
+        "start": 51.28,
+        "end": 56.480000000000004,
+        "text": "Linear regression is a mathematical model that's \nused to predict future events. The weights of the  "
+      },
+      {
+        "start": 56.48,
+        "end": 62.72,
+        "text": "connections between the nodes determines how much \ninfluence each input has on the output. So each  "
+      },
+      {
+        "start": 62.72,
+        "end": 69.52,
+        "text": "node is composed of input data, weights, a bias, \nor a threshold, and then an output. Now data is  "
+      },
+      {
+        "start": 69.52,
+        "end": 76.56,
+        "text": "passed from one layer in the neural network to the \nnext in what is known as a feed forward network -- "
+      },
+      {
+        "start": 77.12,
+        "end": 82.24000000000001,
+        "text": "number three. To illustrate this, let's consider \nwhat a single node in our neural network might  "
+      },
+      {
+        "start": 82.24,
+        "end": 88.32,
+        "text": "look like to decide -- should we go surfing. The \ndecision to go or not is our predicted outcome  "
+      },
+      {
+        "start": 88.32,
+        "end": 96.47999999999999,
+        "text": "or known as our yhat. Let's assume there are \nthree factors influencing our decision. Are the  "
+      },
+      {
+        "start": 96.48,
+        "end": 105.2,
+        "text": "wave's good, 1 for yes or 0 for no.  The waves \nare pumping, so x1 equals 1, 1 for yes.  Is the  "
+      },
+      {
+        "start": 105.2,
+        "end": 112.24000000000001,
+        "text": "lineup empty, well unfortunately not, so that gets a \n0. And then let's consider is it shark-free out  "
+      },
+      {
+        "start": 112.24,
+        "end": 118.56,
+        "text": "there, that's x3 and yes, no shark attacks have \nbeen reported. Now to each decision we assign a  "
+      },
+      {
+        "start": 118.56,
+        "end": 124.88,
+        "text": "weight based on its importance on a scale of 0 \nto 5. So let's say that the waves, we're going to  "
+      },
+      {
+        "start": 124.88,
+        "end": 131.76,
+        "text": "score that one, eh, so this is important, let's \ngive it a 5. And for the crowds, that's w2.  "
+      },
+      {
+        "start": 132.4,
+        "end": 139.44,
+        "text": "Eh, not so important, we'll give that a 2. \nAnd sharks, well, we'll give that a score of a  "
+      },
+      {
+        "start": 139.44,
+        "end": 148.16,
+        "text": "4. Now we can plug in these values into the \nformula to get the desired output. So yhat equals  "
+      },
+      {
+        "start": 148.8,
+        "end": 161.76000000000002,
+        "text": "(1 * 5) + (0 * 2) + (1 * 4), then \nminus 3, that's our threshold, and that gives us  "
+      },
+      {
+        "start": 161.76,
+        "end": 170.07999999999998,
+        "text": "a value of 6. Six is greater than 0, so the \noutput of this node is 1 -- we're going surfing.  "
+      },
+      {
+        "start": 170.08,
+        "end": 174.008,
+        "text": "And if we adjust the weights or the threshold, \nwe can achieve different outcomes."
+      },
+      {
+        "start": 174.008,
+        "end": 183.36,
+        "text": " Number four.  Well, yes, but but but number four, neural networks \nrely on training data to learn and improve their  "
+      },
+      {
+        "start": 183.36,
+        "end": 188.64000000000001,
+        "text": "accuracy over time. We leverage supervised learning \non labeled datasets to train the algorithm.  "
+      },
+      {
+        "start": 188.64,
+        "end": 197.831,
+        "text": "As we train the model, we want to evaluate its \naccuracy using something called a cost function."
+      },
+      {
+        "start": 197.831,
+        "end": 203.2,
+        "text": "Ultimately, the goal is to minimize our cost function to \nensure the correctness of fit for any given  "
+      },
+      {
+        "start": 203.2,
+        "end": 208.39999999999998,
+        "text": "observation, and that happens as the model adjusts \nits weights and biases to fit the training data  "
+      },
+      {
+        "start": 208.4,
+        "end": 213.36,
+        "text": "set, through what's known as gradient descent, \nallowing the model to determine the direction  "
+      },
+      {
+        "start": 213.36,
+        "end": 219.60000000000002,
+        "text": "to take to reduce errors, or more specifically, \nminimize the cost function. And then finally,  "
+      },
+      {
+        "start": 219.6,
+        "end": 224.88,
+        "text": "number five: there are multiple types of neural \nnetworks beyond the feed forward neural network  "
+      },
+      {
+        "start": 224.88,
+        "end": 230.96,
+        "text": "that we've described here. For example, there are \nconvolutional neural networks, known as CNNs, which  "
+      },
+      {
+        "start": 230.96,
+        "end": 235.92000000000002,
+        "text": "have a unique architecture that's well suited \nfor identifying patterns like image recognition.  "
+      },
+      {
+        "start": 235.92,
+        "end": 242.48,
+        "text": "And there are recurrent neural networks, or RNNs, \nwhich are identified by their feedback loops and  "
+      },
+      {
+        "start": 242.48,
+        "end": 248.16,
+        "text": "RNNs are primarily leveraged using time series \ndata to make predictions about future events like  "
+      },
+      {
+        "start": 248.16,
+        "end": 253.02,
+        "text": "sales forecasting.  So, five things in five minutes.   "
+      },
+      {
+        "start": 253.02,
+        "end": 256.023,
+        "text": "To learn more about neural networks, check out these videos."
+      },
+      {
+        "start": 256.023,
+        "end": 257.024,
+        "text": "Thanks for watching."
+      },
+      {
+        "start": 257.691,
+        "end": 261.26099999999997,
+        "text": "If you have any questions, please drop us a line below. And "
+      },
+      {
+        "start": 261.28,
+        "end": 267.84,
+        "text": "if you want to see more videos like this \nin the future, please Like and Subscribe."
+      }
+    ]
+  },
+  "a68f368f-f10a-428d-b4bb-629ecdb72229": {
+    "id": "a68f368f-f10a-428d-b4bb-629ecdb72229",
+    "title": "YouTube Lecture (H_jD5xa1nRg)",
+    "url": "https://youtu.be/H_jD5xa1nRg?si=2n7Sjn7l5nngBcWm",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T12:54:37.302549",
+    "status": "complete",
+    "transcript": "Every neural network is just a collection of neurons, each making tiny mathematical decisions. My goal today is going to be to show you what a single neuron does, and how it transforms numbers into signals and learns which features within its training data matter most. Okay, so when we're trying to understand a neural network, the first building block we need to understand is this artificial neuron. Each neuron is going to take a vector as an input and then output a signal. So, what is a vector? A vector is going to be an ordered list of numerical features that represent properties of data. So, you can represent a lot of data as a vector. Say we're training a neural network to predict housing prices. Here we have a chart showing different features common to houses: square footage, bedrooms, bathrooms, zip code. And then we have normalized values which are the machine's encoding of what this data means. And then the input vector for this home is going to look something like this. And this vector right here is what's going to go in to our neuron. Now, over the course of training, the neural network might learn that square footage is super important in predicting housing pricing. So, we'd multiply that normalized number by a value of 0.9 to represent its importance. While maybe the bathrooms are less important to predicting housing prices, so we'd multiply that by 0.2. Each feature here is getting multiplied by its learned importance or weight, and on and on like this to get the weighted sum. Which looks like this, or explicitly this. Now, every neuron in a layer sees the same input vector. The same four features—size, bedrooms, bathrooms, zip code—in this simplified case. But what they do with those numbers is different, because each neuron is going to have its own set of weights. The weights are what's determining what this neuron is paying attention to. The first neuron might care most about square footage and zip code, and the second might react more to the number of bedrooms or bathrooms. We can think about them specializing. And if one neuron consistently helps to reduce loss by paying attention to large suburban homes—in other words, it contributes to this neural network outputting the correct answer— then it will learn and evolve to detect that pattern more and more strongly. And over time, each neuron discovers a different useful signal, a pattern that's going to help us predict price. Now, if you were just computing this weighted sum, the vectors and their importances, it would come out to be any number. So we want to make this standardized between zero and ... and one. And to make that happen, we're going to apply the sigmoid function, more commonly known as the activation function. I think of it as like the sigmoid squishification function, because it's going to compress any input number into a range between 0 and 1, making it easier for our network to decide if a pattern is present. Though today, most neural networks are going to use ReLU instead of sigmoid for efficiency, we're using sigmoid here for simplicity of conceptualizing this. Now you'll see the b at the end of this equation, and that's our bias term. This here shifts the activation threshold, and it helps the neuron fire even when all the inputs are small. So, this activation function is what makes a neural network nonlinear. Meaning, without activation functions, stacking neurons would just give you another linear model, and nonlinearity is what allows these networks to learn complex patterns. The activation decides whether a neuron fires, and whether its weighted sum is strong enough to make it to the next layer. So each neuron outputs a value after applying the activation function. That output is the activation level. A highly activated neuron means that for this particular house, the neuron's output is large, close to 1 for sigmoid, or positive or high for ReLU. And it's the neuron's way of saying this pattern I'm responsible for is strongly present in the input. So if this is what's happening in one neuron, what's happening in a network of them? A single neuron can only capture one relationship, but by stacking many, this allows the network to learn combinations. Every neuron in a neural network is connected to every other neuron in the next layer, and there are going to be different weights and biases that can be tweaked for each connection. The training process is all about figuring out what the ideal configuration of these dials is. Now, engineers can use open-source projects and tools like MLflow to track and visualize how these weights and biases evolve during training, reinforcing the idea that training equals adjusting weights and biases. So, MLflow lets you log and compare runs, visualize parameter changes, and just understand how different configurations affect the model's overall performance. And during training, the network tweaks these weights and biases to reduce prediction error. And that's backpropagation, a topic for another time. If you learned something today, please be sure to hit the like button and subscribe for more content around development and AI. Cheers!",
+    "notes": "## Introduction to Neural Networks\n### Overview of Artificial Neurons\nArtificial neurons are the building blocks of neural networks, making tiny mathematical decisions to transform numbers into signals. Each neuron takes a **vector** as input and outputs a signal.\n\n### Vectors and Input Data\n* A **vector** is an ordered list of numerical features representing properties of data.\n* Examples of features: square footage, bedrooms, bathrooms, zip code.\n* **Normalized values** are the machine's encoding of what this data means.\n* The input vector is what goes into the neuron for processing.\n\n## Processing Input Data\n### Weighted Sum Calculation\n* Each feature in the input vector is multiplied by its **learned importance** or **weight**.\n* The resulting products are summed to get the **weighted sum**.\n* The weighted sum represents the importance of each feature in predicting the output.\n\n## Neuron Specialization\n### Different Neurons, Different Weights\n* Each neuron in a layer sees the same input vector, but has its own set of **weights**.\n* Weights determine what each neuron is paying attention to.\n* Neurons specialize in detecting specific patterns in the data.\n\n## Activation Function\n### Introducing the Sigmoid Function\n* The **sigmoid function**, also known as the **activation function**, is applied to the weighted sum.\n* The sigmoid function compresses any input number into a range between 0 and 1.\n* This makes it easier for the network to decide if a pattern is present.\n\n## Key Concepts\n| Term | Description |\n| --- | --- |\n| **Vector** | An ordered list of numerical features representing properties of data. |\n| **Normalized values** | The machine's encoding of what the data means. |\n| **Weighted sum** | The sum of the products of each feature and its learned importance or weight. |\n| **Activation function** | A function applied to the weighted sum to compress it into a range between 0 and 1. |\n| **Sigmoid function** | A specific type of activation function that compresses input numbers into a range between 0 and 1. |\n\n## Exam Tips\n* Make sure to understand the concept of a **vector** and how it represents input data.\n* Be able to explain the process of calculating the **weighted sum** and how **weights** are used.\n* Know the purpose of the **activation function** and how it helps the network make decisions.\n* Be familiar with the **sigmoid function** and its role in compressing input numbers into a range between 0 and 1.",
+    "flashcards": [
+      {
+        "front": "What is the basic building block of a neural network?",
+        "back": "An artificial neuron",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is a vector in the context of neural networks?",
+        "back": "An ordered list of numerical features that represent properties of data",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the purpose of the weights in a neural network?",
+        "back": "To determine what features the neuron is paying attention to",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What happens to a neuron that consistently helps to reduce loss in a neural network?",
+        "back": "It learns and evolves to detect that pattern more strongly",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the purpose of the sigmoid function in a neural network?",
+        "back": "To compress any input number into a range between 0 and 1",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "Why is the sigmoid function also known as the activation function?",
+        "back": "Because it activates the neuron by making it easier for the network to decide if a pattern is present",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the result of multiplying each feature in the input vector by its learned importance or weight?",
+        "back": "The weighted sum",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the range of values that the sigmoid function compresses input numbers into?",
+        "back": "Between 0 and 1",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "How do neurons in the same layer of a neural network differ from one another?",
+        "back": "Each neuron has its own set of weights",
+        "topic": "Neural Networks"
+      },
+      {
+        "front": "What is the goal of a neural network in terms of feature detection?",
+        "back": "To discover different useful signals or patterns that help predict the output",
+        "topic": "Neural Networks"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What is the primary function of an artificial neuron in a neural network?",
+        "options": [
+          "To store data",
+          "To make tiny mathematical decisions",
+          "To output a signal based on a vector input",
+          "To predict housing prices"
+        ],
+        "correct": 2,
+        "explanation": "An artificial neuron takes a vector as an input, makes mathematical decisions, and outputs a signal."
+      },
+      {
+        "question": "What is a vector in the context of neural networks?",
+        "options": [
+          "An unordered list of numerical features",
+          "An ordered list of numerical features",
+          "A single numerical value",
+          "A collection of neurons"
+        ],
+        "correct": 1,
+        "explanation": "A vector is an ordered list of numerical features that represent properties of data."
+      },
+      {
+        "question": "What happens to the features in the input vector during the training process?",
+        "options": [
+          "They are discarded",
+          "They are multiplied by a fixed value",
+          "They are multiplied by a learned importance or weight",
+          "They are added together"
+        ],
+        "correct": 2,
+        "explanation": "Each feature in the input vector is multiplied by its learned importance or weight during the training process."
+      },
+      {
+        "question": "What is the purpose of the weights in a neural network?",
+        "options": [
+          "To determine the output of the network",
+          "To determine what each neuron is paying attention to",
+          "To store the input data",
+          "To predict the output"
+        ],
+        "correct": 1,
+        "explanation": "The weights determine what each neuron is paying attention to, allowing them to specialize in different patterns."
+      },
+      {
+        "question": "What is the purpose of the sigmoid function in a neural network?",
+        "options": [
+          "To increase the output range",
+          "To decrease the output range",
+          "To compress the input number into a range between 0 and 1",
+          "To multiply the input by a weight"
+        ],
+        "correct": 2,
+        "explanation": "The sigmoid function, also known as the activation function, compresses any input number into a range between 0 and 1, making it easier for the network to decide if a pattern is present."
+      },
+      {
+        "question": "What happens to a neuron that consistently helps to reduce loss in a neural network?",
+        "options": [
+          "It is removed from the network",
+          "It is replaced by a new neuron",
+          "It learns and evolves to detect the pattern more strongly",
+          "It remains unchanged"
+        ],
+        "correct": 2,
+        "explanation": "A neuron that consistently helps to reduce loss in a neural network will learn and evolve to detect the pattern more strongly over time."
+      },
+      {
+        "question": "What is the result of the weighted sum calculation in a neural network?",
+        "options": [
+          "A vector",
+          "A single number between 0 and 1",
+          "A single number that can be any value",
+          "A collection of neurons"
+        ],
+        "correct": 2,
+        "explanation": "The weighted sum calculation in a neural network results in a single number that can be any value, which is then standardized using the sigmoid function."
+      },
+      {
+        "question": "What is the role of each neuron in a layer of a neural network?",
+        "options": [
+          "Each neuron sees a different input vector",
+          "Each neuron has its own set of weights and sees the same input vector",
+          "Each neuron outputs the same signal",
+          "Each neuron is removed after training"
+        ],
+        "correct": 1,
+        "explanation": "Each neuron in a layer of a neural network sees the same input vector, but has its own set of weights, allowing them to specialize in different patterns."
+      }
+    ],
+    "mindmap": "mindmap\n  Neural_Networks((Neural Networks))\n    Artificial_Neuron((Artificial Neuron))\n      Input_Vector((Input Vector))\n        Numerical_Features((Numerical Features))\n        Data_Representation((Data Representation))\n      Output_Signal((Output Signal))\n        Signal_Transformation((Signal Transformation))\n        Feature_Learning((Feature Learning))\n    Neural_Network_Training((Neural Network Training))\n      Training_Data((Training Data))\n        Housing_Prices((Housing Prices))\n          Features((Features))\n            Square_Footage((Square Footage))\n            Bedrooms((Bedrooms))\n            Bathrooms((Bathrooms))\n            Zip_Code((Zip Code))\n      Weighted_Sum((Weighted Sum))\n        Feature_Importance((Feature Importance))\n        Weight_Multiplier((Weight Multiplier))\n    Neuron_Specialization((Neuron Specialization))\n      Neuron_Weights((Neuron Weights))\n        Unique_Weights((Unique Weights))\n      Pattern_Detection((Pattern Detection))\n        Loss_Reduction((Loss Reduction))\n        Signal_Enhancement((Signal Enhancement))\n    Activation_Function((Activation Function))\n      Sigmoid_Function((Sigmoid Function))\n        Input_Normalization((Input Normalization))\n        Output_Standardization((Output Standardization))",
+    "topics": [
+      "Neural Networks",
+      "Artificial Neurons",
+      "Vectors and Numerical Features",
+      "Neuron Input and Output",
+      "Training Data and Machine Learning"
+    ],
+    "duration": 340.489,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": true,
+      "quiz": true,
+      "mindmap": true
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [],
+      "mastered_count": 0,
+      "completed": false
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.48,
+        "text": "Every neural network is just a collection of neurons, each making tiny mathematical decisions."
+      },
+      {
+        "start": 5.64,
+        "end": 11.120000000000001,
+        "text": "My goal today is going to be to show you what a single neuron does, and how it transforms numbers"
+      },
+      {
+        "start": 11.12,
+        "end": 17.439999999999998,
+        "text": "into signals and learns which features within its training data matter most. Okay, so when we're"
+      },
+      {
+        "start": 17.44,
+        "end": 22.04,
+        "text": "trying to understand a neural network, the first building block we need to understand is this"
+      },
+      {
+        "start": 22.04,
+        "end": 28.64,
+        "text": "artificial neuron. Each neuron is going to take a vector as an input and then output a signal. So,"
+      },
+      {
+        "start": 28.76,
+        "end": 33.96,
+        "text": "what is a vector? A vector is going to be an ordered list of numerical features that represent"
+      },
+      {
+        "start": 33.96,
+        "end": 40.88,
+        "text": "properties of data. So, you can represent a lot of data as a vector. Say we're training a neural"
+      },
+      {
+        "start": 40.88,
+        "end": 46.400000000000006,
+        "text": "network to predict housing prices. Here we have a chart showing different features common to houses:"
+      },
+      {
+        "start": 46.4,
+        "end": 52.48,
+        "text": "square footage, bedrooms, bathrooms, zip code. And then we have normalized values which are the"
+      },
+      {
+        "start": 52.48,
+        "end": 58.919999999999995,
+        "text": "machine's encoding of what this data means. And then the input vector for this home is going to"
+      },
+      {
+        "start": 58.96,
+        "end": 60.409,
+        "text": "look something like this."
+      },
+      {
+        "start": 67.33,
+        "end": 74.209,
+        "text": "And this vector right here is what's going to go in to our neuron. Now, over the course of training,"
+      },
+      {
+        "start": 74.209,
+        "end": 78.809,
+        "text": "the neural network might learn that square footage is super important in predicting housing"
+      },
+      {
+        "start": 78.809,
+        "end": 85.73,
+        "text": "pricing. So, we'd multiply that normalized number by a value of 0.9 to"
+      },
+      {
+        "start": 85.769,
+        "end": 90.649,
+        "text": "represent its importance. While maybe the bathrooms are less important to predicting"
+      },
+      {
+        "start": 90.65,
+        "end": 97.60900000000001,
+        "text": "housing prices, so we'd multiply that by 0.2. Each feature here is getting multiplied by"
+      },
+      {
+        "start": 97.61,
+        "end": 104.449,
+        "text": "its learned importance or weight, and on and on like this to get the weighted sum. Which looks"
+      },
+      {
+        "start": 104.449,
+        "end": 111.369,
+        "text": "like this, or explicitly this. Now, every neuron in a layer sees"
+      },
+      {
+        "start": 111.369,
+        "end": 118.18,
+        "text": "the same input vector. The same four features—size, bedrooms, bathrooms, zip code—in this simplified"
+      },
+      {
+        "start": 118.18,
+        "end": 123.93900000000001,
+        "text": "case. But what they do with those numbers is different, because each neuron is going to have"
+      },
+      {
+        "start": 123.94,
+        "end": 129.5,
+        "text": "its own set of weights. The weights are what's determining what this neuron is paying attention"
+      },
+      {
+        "start": 129.5,
+        "end": 134.939,
+        "text": "to. The first neuron might care most about square footage and zip code, and the second might react"
+      },
+      {
+        "start": 134.94,
+        "end": 141.619,
+        "text": "more to the number of bedrooms or bathrooms. We can think about them specializing. And if one"
+      },
+      {
+        "start": 141.619,
+        "end": 148.099,
+        "text": "neuron consistently helps to reduce loss by paying attention to large suburban homes—in other"
+      },
+      {
+        "start": 148.1,
+        "end": 154.739,
+        "text": "words, it contributes to this neural network outputting the correct answer— then it will learn"
+      },
+      {
+        "start": 154.74,
+        "end": 160.49900000000002,
+        "text": "and evolve to detect that pattern more and more strongly. And over time, each neuron discovers a"
+      },
+      {
+        "start": 160.499,
+        "end": 165.779,
+        "text": "different useful signal, a pattern that's going to help us predict price. Now, if you were just"
+      },
+      {
+        "start": 165.779,
+        "end": 172.57999999999998,
+        "text": "computing this weighted sum, the vectors and their importances, it would come out to be any number. So we"
+      },
+      {
+        "start": 172.58,
+        "end": 178.34900000000002,
+        "text": "want to make this standardized between zero and ... and one. And to make that happen, we're going"
+      },
+      {
+        "start": 178.35,
+        "end": 184.54999999999998,
+        "text": "to apply the sigmoid function, more commonly known as the activation function. I think of it as like"
+      },
+      {
+        "start": 184.589,
+        "end": 190.349,
+        "text": "the sigmoid squishification function, because it's going to compress any input number into a"
+      },
+      {
+        "start": 190.35,
+        "end": 197.26999999999998,
+        "text": "range between 0 and 1, making it easier for our network to decide if a pattern is present. Though"
+      },
+      {
+        "start": 197.31,
+        "end": 203.229,
+        "text": "today, most neural networks are going to use ReLU instead of sigmoid for efficiency, we're using"
+      },
+      {
+        "start": 203.229,
+        "end": 210.11,
+        "text": "sigmoid here for simplicity of conceptualizing this. Now you'll see the b at the end of this"
+      },
+      {
+        "start": 210.11,
+        "end": 215.389,
+        "text": "equation, and that's our bias term. This here shifts the activation threshold, and it helps the"
+      },
+      {
+        "start": 215.39,
+        "end": 221.70999999999998,
+        "text": "neuron fire even when all the inputs are small. So, this activation function is what makes a neural"
+      },
+      {
+        "start": 221.71,
+        "end": 228.03,
+        "text": "network nonlinear. Meaning, without activation functions, stacking neurons would just give you"
+      },
+      {
+        "start": 228.03,
+        "end": 234.869,
+        "text": "another linear model, and nonlinearity is what allows these networks to learn complex patterns."
+      },
+      {
+        "start": 234.919,
+        "end": 240.4,
+        "text": "The activation decides whether a neuron fires, and whether its weighted sum is strong enough to make"
+      },
+      {
+        "start": 240.4,
+        "end": 247.08,
+        "text": "it to the next layer. So each neuron outputs a value after applying the activation function. That"
+      },
+      {
+        "start": 247.08,
+        "end": 253.72,
+        "text": "output is the activation level. A highly activated neuron means that for this particular"
+      },
+      {
+        "start": 253.72,
+        "end": 260.279,
+        "text": "house, the neuron's output is large, close to 1 for sigmoid, or positive or high for"
+      },
+      {
+        "start": 260.279,
+        "end": 266.319,
+        "text": "ReLU. And it's the neuron's way of saying this pattern I'm responsible for is strongly present"
+      },
+      {
+        "start": 266.32,
+        "end": 273.199,
+        "text": "in the input. So if this is what's happening in one neuron, what's happening in a network of"
+      },
+      {
+        "start": 273.2,
+        "end": 279.92,
+        "text": "them? A single neuron can only capture one relationship, but by stacking many, this allows the"
+      },
+      {
+        "start": 279.92,
+        "end": 286.399,
+        "text": "network to learn combinations. Every neuron in a neural network is connected to every"
+      },
+      {
+        "start": 286.4,
+        "end": 292.11899999999997,
+        "text": "other neuron in the next layer, and there are going to be different weights and biases that can"
+      },
+      {
+        "start": 292.119,
+        "end": 298.16900000000004,
+        "text": "be tweaked for each connection. The training process is all about figuring out what the ideal"
+      },
+      {
+        "start": 298.17,
+        "end": 305.089,
+        "text": "configuration of these dials is. Now, engineers can use open-source projects and tools like MLflow"
+      },
+      {
+        "start": 305.089,
+        "end": 311.608,
+        "text": "to track and visualize how these weights and biases evolve during training, reinforcing the"
+      }
+    ]
+  },
+  "5368e3d3-dfa3-4cf0-8a17-7f85a8f4776a": {
+    "id": "5368e3d3-dfa3-4cf0-8a17-7f85a8f4776a",
+    "title": "Multi Agent Systems",
+    "url": "https://youtu.be/sWH0T4Zez6I?si=0JN3K7kAcd1WAL20",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T13:22:50.976805",
+    "status": "complete",
+    "transcript": "Here's a bee. On its own, it can collect nectar, but that's about it. Now add thousands of bees, and suddenly they're making honey. They're cooling the hive and defending it. That's exactly how multi-agent systems work. Many simple AI agents, each with a small job, coming together to solve big, complex problems. At its core, an AI agent is an autonomous system that can perform tasks on behalf of another agent or another system by designing its workflow and using available tools. And the performance of AI agents depends on the large language model, or LLM, used to power them, as well as their set of tools. And of course, a reasoning framework that dictates how they take the output of these tools to make decisions. Multi-agent systems take this a step further by allowing agents to remain autonomous, but also cooperate and coordinate in agent structures. What are these structures look like? Let's start with a decentralized network. Let's imagine you have several AI agents. Each of them can communicate with one another to share information and resources to help inform their decision process, each operating with the same amount of authority. This is often referred to as an agent network. There are also hierarchical structures which are tree like, and they contain agents with varying levels of autonomy. The simplest example is a simple or supervisor hierarchical structure in which one agent has the decision-making authority over other agents. And by adding more layers and more subtrees, we can make the system more complex. There are many ways to distribute the authority here, for example, in uniform hierarchical structures. All agents at the same level play the same role and have the same authority. And the agents coordinate laterally, meaning at the top of the structure you might have a single manager or a coordinator agent, and in the middle levels there are supervisor agents, each managing a group of agents below them. And at the bottom these are the worker agents. So they're directly performing the tasks. And this structure helps break down responsibilities. So, higher levels coordinate. Lower levels execute. Let's keep in mind, though, that the authority doesn't have to be strictly top down or centralized. It can also be distributed across sub-hierarchies, in which one agent has the decision-making authority over other agents. Or maybe we want the structure to be dynamic so that the authority shifts based on agent expertise or on a situational basis. Now that we've covered the basics, let's talk about implementing these agents in the real world. What are the advantages of using multi-agent systems over a single agent? Well, to start they provide us with flexibility. This is because multi-agent systems can adjust to varying environments by adding, removing or adapting agents. Multi-agent systems also allow for scalability. And the cooperation of several agents implies a greater pool of shared information, and this collaboration allows these systems to solve more complex problems than a single agent could. These systems also encourage domain specialization. in a single-agent structure, one agent performs tasks in various domains, whereas each agent in a multi-agent system can hold specific domain expertise. Perhaps one agent specializes in synthesizing research papers, the other performs complex calculations and another specializes in web search via an API. The last advantage I want to emphasize here is that, believe it or not,mult multi-agent systems outperform single agents. And this is because the more action plans that are available to an agent, the more learning and reflection occur. An AI agent incorporating knowledge and feedback from other agents allows for a greater magnitude of information synthesis. And of course, as with most things in life, there are some challenges with building multi-agent systems. When they're built using the same LLMs, for example, they can ex experience shared pitfalls and agent malfunctions. Such weaknesses might cause a system-wide failure of all involved agents or expose vulnerability to adverse attacks. Our choice of the LLM, among other factors, impacts how effectively an agent performs, and this is why thorough training, testing and data governance are critical to minimizing failures. Another challenge of building multi-agent systems is coordination complexity. As developers, we're tasked with enabling coordination and negotiation between agents so that they're not competing with resources or simply overriding each other's outputs. Instead, agents need mechanisms to share information, resolve conflicts and synchronize decisions in a way that maximizes the collective performance rather than causing bottlenecks or contradictions. And the last challenge we'll touch on here is the risk of unpredictable behavior. Though this drawback in and of itself isn't unique to multi-agent systems, it can easily be amplified. Typically, the more agents are involved, the greater the unpredictable behavior becomes. All right. Now, if we want to avoid having too many cooks in the kitchen, when is it best to stick to a single agent system versus a multi-agent system? Well, it depends on the task and our objectives, right? If the problem is complex, and perhaps it spans various domains. Maybe it has limited resources or it needs to scale across changing environments. This is exactly when a multi-agent system truly shines. If we want to build on this restaurant analogy of cooks in the kitchen, for example, let's put it this way. One chef is completely fine for a small kitchen, right? Think of it like making breakfast for yourself. But if you're running a restaurant that serves different cuisines and desserts, etc., you'll want the whole kitchen staff working in sync. I hope you found this video useful and if you have questions or comments, let me know below. Don't forget to like the video and subscribe for more content like this.",
+    "notes": "## Introduction to Multi-Agent Systems\n### Definition and Basics\n* A **multi-agent system** is a collection of simple **AI agents** that work together to solve complex problems.\n* An **AI agent** is an autonomous system that can perform tasks on behalf of another agent or system by designing its workflow and using available tools.\n* The performance of AI agents depends on the **Large Language Model (LLM)** used to power them, as well as their set of tools and a **reasoning framework** that dictates how they make decisions.\n\n### Agent Structures\n* **Decentralized Network**: A network of AI agents that can communicate with each other to share information and resources, each operating with the same amount of authority.\n* **Hierarchical Structures**: Tree-like structures that contain agents with varying levels of autonomy, such as:\n\t+ **Simple or Supervisor Hierarchical Structure**: One agent has decision-making authority over other agents.\n\t+ **Uniform Hierarchical Structure**: All agents at the same level play the same role and have the same authority, with a coordinator agent at the top, supervisor agents in the middle, and worker agents at the bottom.\n\n## Characteristics of Multi-Agent Systems\n### Advantages\n* **Flexibility**: Multi-agent systems can adjust to varying environments by adding, removing, or adapting agents.\n* **Scalability**: Multi-agent systems can be scaled up or down as needed.\n* **Collaboration**: The cooperation of several agents implies a greater pool of shared information.\n\n### Authority Distribution\n* **Centralized**: Authority is held by a single agent or a small group of agents.\n* **Decentralized**: Authority is distributed across all agents.\n* **Dynamic**: Authority shifts based on agent expertise or situational basis.\n\n## Implementing Multi-Agent Systems\n### Real-World Applications\n* Multi-agent systems can be used in a variety of applications, such as:\n\t+ **Task allocation**: Assigning tasks to agents based on their capabilities and expertise.\n\t+ **Resource allocation**: Allocating resources to agents based on their needs and priorities.\n\n## Comparison of Agent Structures\n| Structure | Characteristics | Advantages | Disadvantages |\n| --- | --- | --- | --- |\n| Decentralized Network | Equal authority, peer-to-peer communication | Flexible, scalable | Difficult to coordinate, may lack clear decision-making authority |\n| Hierarchical Structure | Varying levels of autonomy, tree-like structure | Clear decision-making authority, efficient communication | May be inflexible, prone to single-point failures |\n\n## Exam Tips\n* Be able to define and explain the basics of multi-agent systems, including the role of AI agents and their performance factors.\n* Understand the different types of agent structures, including decentralized networks and hierarchical structures.\n* Be able to identify the advantages and disadvantages of multi-agent systems, including flexibility, scalability, and collaboration.\n* Be familiar with the characteristics of different agent structures, including authority distribution and communication patterns.",
+    "flashcards": [
+      {
+        "front": "What is an AI agent?",
+        "back": "An autonomous system that can perform tasks on behalf of another agent or system",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What powers AI agents?",
+        "back": "Large language models (LLMs) and their set of tools",
+        "topic": "AI Agents"
+      },
+      {
+        "front": "What is a multi-agent system?",
+        "back": "Many simple AI agents coming together to solve complex problems",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What is a decentralized network in multi-agent systems?",
+        "back": "A network where agents communicate and share information with equal authority",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What is a hierarchical structure in multi-agent systems?",
+        "back": "A tree-like structure with agents having varying levels of autonomy",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What is the simplest example of a hierarchical structure?",
+        "back": "A simple supervisor hierarchical structure with one decision-making agent",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What are the advantages of using multi-agent systems?",
+        "back": "Flexibility, scalability, and a greater pool of shared information",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "How can multi-agent systems adjust to varying environments?",
+        "back": "By adding, removing, or adapting agents",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What is the role of higher-level agents in a hierarchical structure?",
+        "back": "To coordinate and make decisions",
+        "topic": "Multi-Agent Systems"
+      },
+      {
+        "front": "What is the role of lower-level agents in a hierarchical structure?",
+        "back": "To execute tasks",
+        "topic": "Multi-Agent Systems"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What is the primary characteristic of an AI agent in a multi-agent system?",
+        "options": [
+          "It can only perform a single task",
+          "It is a centralized system",
+          "It is an autonomous system that can perform tasks on behalf of another agent or system",
+          "It cannot communicate with other agents"
+        ],
+        "correct": 2,
+        "explanation": "An AI agent is an autonomous system that can perform tasks on behalf of another agent or system by designing its workflow and using available tools."
+      },
+      {
+        "question": "What type of structure is characterized by agents with varying levels of autonomy, often resembling a tree-like hierarchy?",
+        "options": [
+          "Decentralized network",
+          "Hierarchical structure",
+          "Uniform hierarchical structure",
+          "Dynamic structure"
+        ],
+        "correct": 1,
+        "explanation": "Hierarchical structures are tree-like and contain agents with varying levels of autonomy."
+      },
+      {
+        "question": "In a uniform hierarchical structure, what is the role of agents at the same level?",
+        "options": [
+          "They have different roles and authorities",
+          "They have the same role and authority, but coordinate vertically",
+          "They have the same role and authority, and coordinate laterally",
+          "They do not coordinate with each other"
+        ],
+        "correct": 2,
+        "explanation": "In a uniform hierarchical structure, all agents at the same level play the same role and have the same authority, and they coordinate laterally."
+      },
+      {
+        "question": "What is an advantage of using multi-agent systems over a single agent?",
+        "options": [
+          "They are less flexible",
+          "They are less scalable",
+          "They provide flexibility and scalability",
+          "They are more centralized"
+        ],
+        "correct": 2,
+        "explanation": "Multi-agent systems provide flexibility and scalability, as they can adjust to varying environments by adding, removing, or adapting agents."
+      },
+      {
+        "question": "How do agents in a decentralized network communicate with each other?",
+        "options": [
+          "They do not communicate with each other",
+          "They communicate through a centralized authority",
+          "They communicate with each other directly to share information and resources",
+          "They communicate only with agents at the same level"
+        ],
+        "correct": 2,
+        "explanation": "In a decentralized network, agents can communicate with one another to share information and resources to help inform their decision process."
+      },
+      {
+        "question": "What is the role of the manager or coordinator agent in a hierarchical structure?",
+        "options": [
+          "To perform tasks directly",
+          "To manage a group of agents below them",
+          "To coordinate laterally with other agents at the same level",
+          "To have decision-making authority over other agents and coordinate the system"
+        ],
+        "correct": 3,
+        "explanation": "The manager or coordinator agent is at the top of the structure and coordinates the system, while supervisor agents manage groups of agents below them."
+      },
+      {
+        "question": "How can authority be distributed in a hierarchical structure?",
+        "options": [
+          "Only in a top-down manner",
+          "Only in a decentralized manner",
+          "In a uniform manner, with all agents having the same authority",
+          "In various ways, including uniform, decentralized, or dynamic distribution"
+        ],
+        "correct": 3,
+        "explanation": "Authority can be distributed in various ways, including uniform, decentralized, or dynamic distribution, where authority shifts based on agent expertise or situational basis."
+      },
+      {
+        "question": "What is a benefit of the cooperation of several agents in a multi-agent system?",
+        "options": [
+          "A smaller pool of shared information",
+          "A lack of flexibility",
+          "A greater pool of shared information",
+          "A more centralized system"
+        ],
+        "correct": 2,
+        "explanation": "The cooperation of several agents implies a greater pool of shared information, allowing the system to make more informed decisions."
+      }
+    ],
+    "mindmap": "mindmap\n  Multi-Agent Systems((Multi-Agent Systems))\n    Definition\n      Autonomous Systems\n      Perform Tasks\n      On Behalf of Others\n    Components\n      AI Agents\n      Large Language Models\n      Reasoning Framework\n    Structures\n      Decentralized Networks\n        Agent Networks\n        Shared Information\n        Shared Resources\n      Hierarchical Structures\n        Tree-Like\n        Varying Autonomy\n        Supervisor Hierarchical Structure\n        Uniform Hierarchical Structures\n          Lateral Coordination\n          Manager/Coordinator Agent\n          Supervisor Agents\n          Worker Agents\n    Advantages\n      Flexibility\n        Adapt to Environments\n        Add/Remove/Adapt Agents\n      Scalability\n      Shared Information\n      Collaboration\n    Implementation\n      Real-World Applications\n      Dynamic Authority\n        Agent Expertise\n        Situational Basis\n      Distributed Authority\n        Sub-Hierarchies\n        Decision-Making Authority",
+    "topics": [
+      "Introduction to Multi-Agent Systems",
+      "AI Agents and Their Components",
+      "Decentralized Networks and Agent Structures",
+      "Autonomy and Cooperation in Multi-Agent Systems",
+      "Large Language Models and Reasoning Frameworks"
+    ],
+    "duration": 473.26,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": true,
+      "quiz": true,
+      "mindmap": true
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [],
+      "mastered_count": 0,
+      "completed": false
+    },
+    "segments": [
+      {
+        "start": 0.24,
+        "end": 7.24,
+        "text": "Here's a bee. On its own, it can collect nectar, but that's about it. Now add thousands"
+      },
+      {
+        "start": 7.24,
+        "end": 13.84,
+        "text": "of bees, and suddenly they're making honey. They're cooling the hive and defending it. That's exactly"
+      },
+      {
+        "start": 13.84,
+        "end": 20.8,
+        "text": "how multi-agent systems work. Many simple AI agents, each with a small job,"
+      },
+      {
+        "start": 20.8,
+        "end": 27.6,
+        "text": "coming together to solve big, complex problems. At its core, an AI agent is an"
+      },
+      {
+        "start": 27.6,
+        "end": 34.120000000000005,
+        "text": "autonomous system that can perform tasks on behalf of another agent or another"
+      },
+      {
+        "start": 34.12,
+        "end": 40.8,
+        "text": "system by designing its workflow and using available tools. And the performance of AI"
+      },
+      {
+        "start": 40.84,
+        "end": 47.720000000000006,
+        "text": "agents depends on the large language model, or LLM, used to power them, as"
+      },
+      {
+        "start": 47.72,
+        "end": 54.68,
+        "text": "well as their set of tools. And of course, a reasoning framework that dictates"
+      },
+      {
+        "start": 54.68,
+        "end": 61.44,
+        "text": "how they take the output of these tools to make decisions. Multi-agent systems take this a step"
+      },
+      {
+        "start": 61.44,
+        "end": 67.79899999999999,
+        "text": "further by allowing agents to remain autonomous, but also cooperate and coordinate in agent"
+      },
+      {
+        "start": 67.8,
+        "end": 73.51899999999999,
+        "text": "structures. What are these structures look like? Let's start with a decentralized network."
+      },
+      {
+        "start": 75.04,
+        "end": 81.56,
+        "text": "Let's imagine you have several AI agents. Each of them"
+      },
+      {
+        "start": 81.64,
+        "end": 88.32,
+        "text": "can communicate with one another to share information and resources to help"
+      },
+      {
+        "start": 88.32,
+        "end": 94.839,
+        "text": "inform their decision process, each operating with the same amount of authority."
+      },
+      {
+        "start": 95.12,
+        "end": 99.119,
+        "text": "This is often referred to as an agent network."
+      },
+      {
+        "start": 102.08,
+        "end": 108.88,
+        "text": "There are also hierarchical structures which are tree like, and"
+      },
+      {
+        "start": 109.4,
+        "end": 116.0,
+        "text": "they contain agents with varying levels of autonomy. The simplest example is a simple or"
+      },
+      {
+        "start": 116.0,
+        "end": 122.8,
+        "text": "supervisor hierarchical structure in which one agent has the decision-making authority"
+      },
+      {
+        "start": 122.84,
+        "end": 129.52,
+        "text": "over other agents. And by adding more layers"
+      },
+      {
+        "start": 129.52,
+        "end": 134.92000000000002,
+        "text": "and more subtrees, we can make the system more complex."
+      },
+      {
+        "start": 137.6,
+        "end": 143.4,
+        "text": "There are many ways to distribute the authority here, for example, in uniform hierarchical"
+      },
+      {
+        "start": 143.4,
+        "end": 150.0,
+        "text": "structures. All agents at the same level play the same role and have the same authority."
+      },
+      {
+        "start": 150.8,
+        "end": 157.20000000000002,
+        "text": "And the agents coordinate laterally, meaning at the top of the structure you might have a single"
+      },
+      {
+        "start": 157.2,
+        "end": 164.16,
+        "text": "manager or a coordinator agent, and in the middle levels there are supervisor agents, each"
+      },
+      {
+        "start": 164.2,
+        "end": 170.88,
+        "text": "managing a group of agents below them. And at the bottom these are the worker agents. So they're"
+      },
+      {
+        "start": 170.88,
+        "end": 177.79999999999998,
+        "text": "directly performing the tasks. And this structure helps break down responsibilities. So, higher"
+      },
+      {
+        "start": 177.8,
+        "end": 184.589,
+        "text": "levels coordinate. Lower levels execute. Let's keep in mind, though, that the authority doesn't have to"
+      },
+      {
+        "start": 184.63,
+        "end": 191.63,
+        "text": "be strictly top down or centralized. It can also be distributed across sub-hierarchies, in"
+      },
+      {
+        "start": 191.63,
+        "end": 198.54999999999998,
+        "text": "which one agent has the decision-making authority over other agents. Or maybe we"
+      },
+      {
+        "start": 198.55,
+        "end": 205.50900000000001,
+        "text": "want the structure to be dynamic so that the authority shifts based on agent expertise or on"
+      },
+      {
+        "start": 205.509,
+        "end": 212.22899999999998,
+        "text": "a situational basis. Now that we've covered the basics, let's talk about implementing these agents"
+      },
+      {
+        "start": 212.229,
+        "end": 219.02900000000002,
+        "text": "in the real world. What are the advantages of using multi-agent systems over a"
+      },
+      {
+        "start": 219.029,
+        "end": 225.79,
+        "text": "single agent? Well, to start they provide us with flexibility. This is"
+      },
+      {
+        "start": 225.79,
+        "end": 232.469,
+        "text": "because multi-agent systems can adjust to varying environments by adding, removing or"
+      },
+      {
+        "start": 232.469,
+        "end": 239.38899999999998,
+        "text": "adapting agents. Multi-agent systems also allow for scalability. And"
+      },
+      {
+        "start": 239.39,
+        "end": 246.26899999999998,
+        "text": "the cooperation of several agents implies a greater pool of shared information, and this"
+      },
+      {
+        "start": 246.27,
+        "end": 252.869,
+        "text": "collaboration allows these systems to solve more complex problems than a single agent could."
+      },
+      {
+        "start": 253.23,
+        "end": 259.589,
+        "text": "These systems also encourage domain specialization. in a single-agent structure, one agent"
+      },
+      {
+        "start": 259.589,
+        "end": 266.349,
+        "text": "performs tasks in various domains, whereas each agent in a"
+      },
+      {
+        "start": 266.35,
+        "end": 273.029,
+        "text": "multi-agent system can hold specific domain expertise. Perhaps one agent specializes in"
+      },
+      {
+        "start": 273.029,
+        "end": 279.95,
+        "text": "synthesizing research papers, the other performs complex calculations and another specializes"
+      },
+      {
+        "start": 279.95,
+        "end": 286.22999999999996,
+        "text": "in web search via an API. The last advantage I want to emphasize here is that, believe it or not,mult"
+      },
+      {
+        "start": 286.67,
+        "end": 293.23,
+        "text": "multi-agent systems outperform single agents. And this is because the more"
+      },
+      {
+        "start": 293.23,
+        "end": 300.03000000000003,
+        "text": "action plans that are available to an agent, the more learning and reflection occur. An AI agent"
+      },
+      {
+        "start": 300.03,
+        "end": 305.34999999999997,
+        "text": "incorporating knowledge and feedback from other agents allows for a greater magnitude of"
+      },
+      {
+        "start": 305.35,
+        "end": 311.91,
+        "text": "information synthesis. And of course, as with most things in life, there are some"
+      },
+      {
+        "start": 311.91,
+        "end": 318.35,
+        "text": "challenges with building multi-agent systems. When they're built using the same LLMs, for example,"
+      },
+      {
+        "start": 318.39,
+        "end": 323.669,
+        "text": "they can ex experience shared pitfalls and agent malfunctions."
+      },
+      {
+        "start": 325.429,
+        "end": 331.63,
+        "text": "Such weaknesses might cause a system-wide failure of all involved agents or expose"
+      },
+      {
+        "start": 331.63,
+        "end": 337.90999999999997,
+        "text": "vulnerability to adverse attacks. Our choice of the LLM, among other factors,"
+      }
+    ]
+  },
+  "690646a8-2ae2-4d37-8ca7-3185e842249d": {
+    "id": "690646a8-2ae2-4d37-8ca7-3185e842249d",
+    "title": "Cast in computer networks",
+    "url": "https://youtu.be/EcWhJbEWxHU?si=9QskHPV3DaWVfFYg",
+    "language": "hi",
+    "source": "youtube",
+    "created_at": "2026-06-19T13:49:17.686773",
+    "status": "complete",
+    "transcript": "hello friends welcome to weights measure the topic is type of casting in computer networks so generally computer networks may amuse girl-thing a unicasting broadcasting and multicast stream although your topic you have bought these impulse are toppika basically happen again again part of you guys go or join Liam computer network jovem start Katya though in kibarim a basically empathic kyookie eat tums Joe have OU's Oh Thea paper questions calendar or theoretical questions Annika Giada chance is there especially UGC net yeah k vs type of exams me gate key point of view say boss of important near but other up computer networks compadre other is kira concepts copper drive so definitely have to pathology hey what is a unicasting broadcasting and multicast stream the yeah hop a propeller a unicast Tosca McLovin ipecac cast me skip tonello death name unlock home santa career data because of networks key term a masquerade to network scam main purpose care we are sharing the data we are sharing the files to home Kotani Nobuko file share career unique a muslim have one unique a modulo P 1 1 means 1 to 1 1 to 1 1 to 1 means a Banda eight-deuce rev Andre go Santa karai that is what a kind of one-to-one communication Jessica you could network a here this is network a network a car let's see address a 90 dot 0 dot 0 dot 0 when a class a Colette were clear or a C let's say class a kind core network and network B or waha PP boss are a number of hosts a bugger yaha p8 host let's say m1 want to send our data to m2 in this network Mottola PRC agonda newsroom and they were messing send Carrere that is what a kind of one-to-one communication job journey used Curtin daily basis pay homage of messages co-signed Kathy from Java their message is one-to-one send Kathy although we can send a message to the group also but I'm generally one-to-one communication car use got there this is a simple meaning next step rod what is the meaning of broadcast actually broadcast is basically of two types limited broadcast and Direct broadcast limited broadcast and Direct broadcast limited broadcast means limited broadcasting of a slub care broadcast actual mikake sub logo goes and kernel maximum means we have to send a message to all broadcast varlaam on to europe a limited broadcasting of Mottola where let's say our network a key under egg von deenis our ivanova massive is a host name sorry host go message a garbage in here network a key under e to school both in limited broadcast or julia kurtik aciem 90 dot 0 dot 0 dot 0 over here network here or its network me a girl m1 want to send a message to all to you happy you skirt IAM 255 dot 255 dot 255 dot 255 mclubbe all one's all once the hot lava sub comas is identical though within the network next with direct broadcast I did direct broadcast address cometh la where he lets say network a key under m1 want to send a message to all in network to EOS a Doozer network makes re-bond oka massive a net to all who scares me ah miss cobalt a direct broadcast address or direct broadcast address key kiss me let's say Kim network a cabal dagger Network beam a sari logo Costa Rica McArthur so destination can address yoga 92 point 255 dot 255 dot 255 because 90 dot 0 dot 0 dot 0 it's a network IP is a network ID or 92 point all one's 92 Kaiba sorry one scherzo that becomes the direct broadcast address of this network or every Yahoo Seco a network a miss our own Covina jatha it becomes 90 dot 255 dot 255 dot 255 then multicast multicast is what multi has some jelly Westholme generally though terms the use got a unique ostia broadcast but multicast camouflage group Omega message goes and Carmen groups may groups come of love a similar kind of people a great group may a let's say we a research group a yeah Graham real life environment key bath curry Tom generally again Wabo Lukey ogre ogre am news key baath karenge news agar broadcaster news is what means channel is what a broadcast one of sorry logo co-editor a lake in agar my email send kirtan he about semi America's groups money out there that becomes our multicast stream but like particular group code target career similar kind of people core target correct to broadcast K under here at the scheme three aa takea multicast stream so multicast Ingham IGMP internet group massive protocol Caillou's Garcia he Ivan class D a glassful addressing him bath Karen took Class D many skill for already video even are you here or Skylink message here coruña to Class D may actually Q Omni class divinity groups Kelly Heejun divinity key hum Java C other groups Co similar kind of people Co target cursor to a basica unicasting broadcasting and multicast inga to Ocwen concepts keeper am a pathology takea pinko further questions may use the circuit thank you",
+    "notes": "## नेटवर्क प्रकार\nनेटवर्क प्रकार मुख्य रूप से तीन प्रकार के होते हैं: **यूनिकास्टिंग**, **ब्रॉडकास्टिंग**, और **मल्टीकास्ट स्ट्रीम**।\n\n### यूनिकास्टिंग\n**यूनिकास्टिंग** एक प्रकार का नेटवर्क प्रकार है जिसमें डेटा एक स्रोत से एक गंतव्य तक भेजा जाता है। यह एक-एक मोड में संचार का एक उदाहरण है, जहां एक होस्ट दूसरे होस्ट को डेटा भेजता है।\n\n* एक-एक संचार\n* एक होस्ट दूसरे होस्ट को डेटा भेजता है\n* उदाहरण: ईमेल, फाइल ट्रांसफर\n\n### ब्रॉडकास्टिंग\n**ब्रॉडकास्टिंग** एक प्रकार का नेटवर्क प्रकार है जिसमें डेटा एक स्रोत से सभी गंतव्यों तक भेजा जाता है। यह दो प्रकार का होता है: **सीमित ब्रॉडकास्ट** और **डायरेक्ट ब्रॉडकास्ट**।\n\n* सीमित ब्रॉडकास्ट: एक नेटवर्क के भीतर सभी होस्टों को डेटा भेजना\n* डायरेक्ट ब्रॉडकास्ट: एक नेटवर्क से दूसरे नेटवर्क के सभी होस्टों को डेटा भेजना\n* उदाहरण: नेटवर्क के सभी होस्टों को एक संदेश भेजना\n\n### मल्टीकास्ट स्ट्रीम\n**मल्टीकास्ट स्ट्रीम** एक प्रकार का नेटवर्क प्रकार है जिसमें डेटा एक स्रोत से कई गंतव्यों तक भेजा जाता है, लेकिन सभी गंतव्यों को नहीं।\n\n* एक से कई संचार\n* एक होस्ट कई होस्टों को डेटा भेजता है, लेकिन सभी नहीं\n* उदाहरण: ऑनलाइन वीडियो स्ट्रीमिंग\n\n## नेटवर्क पते\n\nनेटवर्क पते का प्रारूप निम्नलिखित है:\n\n| नेटवर्क पता | विवरण |\n| --- | --- |\n| 192.0.0.0 | नेटवर्क पता |\n| 255.255.255.255 | ब्रॉडकास्ट पता |\n\n## परीक्षा के लिए सुझाव\n* नेटवर्क प्रकारों के बीच अंतर को समझें\n* यूनिकास्टिंग, ब्रॉडकास्टिंग, और मल्टीकास्ट स्ट्रीम के उदाहरणों को पहचानें\n* नेटवर्क पते के प्रारूप को समझें\n* नेटवर्क प्रकारों के बीच संबंधों को समझें",
+    "flashcards": [
+      {
+        "front": "क्या है यूनिकास्टिंग?",
+        "back": "यूनिकास्टिंग एक प्रकार का कम्युनिकेशन है जिसमें डेटा को एक से एक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "यूनिकास्टिंग का अर्थ",
+        "back": "यूनिकास्टिंग का अर्थ है एक से एक कम्युनिकेशन, जहां डेटा को एक होस्ट से दूसरे होस्ट तक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "ब्रॉडकास्ट क्या है?",
+        "back": "ब्रॉडकास्ट एक प्रकार का कम्युनिकेशन है जिसमें डेटा को सभी होस्ट तक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "ब्रॉडकास्ट के प्रकार",
+        "back": "ब्रॉडकास्ट के दो प्रकार हैं: लिमिटेड ब्रॉडकास्ट और डायरेक्ट ब्रॉडकास्ट।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "लिमिटेड ब्रॉडकास्ट",
+        "back": "लिमिटेड ब्रॉडकास्ट में डेटा को एक नेटवर्क के भीतर सभी होस्ट तक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "डायरेक्ट ब्रॉडकास्ट",
+        "back": "डायरेक्ट ब्रॉडकास्ट में डेटा को एक नेटवर्क से दूसरे नेटवर्क तक सभी होस्ट तक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "मल्टीकास्ट क्या है?",
+        "back": "मल्टीकास्ट एक प्रकार का कम्युनिकेशन है जिसमें डेटा को एक से कई होस्ट तक भेजा जाता है।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      },
+      {
+        "front": "कम्प्यूटर नेटवर्क में कम्युनिकेशन के प्रकार",
+        "back": "कम्प्यूटर नेटवर्क में कम्युनिकेशन के तीन प्रकार हैं: यूनिकास्टिंग, ब्रॉडकास्टिंग और मल्टीकास्टिंग।",
+        "topic": "कम्प्यूटर नेटवर्क"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "कंप्यूटर नेटवर्क में डेटा भेजने के प्रकारों में से एक है",
+        "options": [
+          "यूनिकास्टिंग",
+          "ब्रॉडकास्टिंग",
+          "मल्टीकास्टिंग",
+          "सभी ऊपर"
+        ],
+        "correct": 3,
+        "explanation": "कंप्यूटर नेटवर्क में डेटा भेजने के तीन प्रकार होते हैं: यूनिकास्टिंग, ब्रॉडकास्टिंग और मल्टीकास्टिंग"
+      },
+      {
+        "question": "यूनिकास्टिंग में डेटा किस प्रकार भेजा जाता है?",
+        "options": [
+          "एक से एक",
+          "एक से सभी",
+          "सभी से एक",
+          "सभी से सभी"
+        ],
+        "correct": 0,
+        "explanation": "यूनिकास्टिंग में डेटा एक से एक भेजा जाता है, अर्थात एक स्रोत से एक गंतव्य तक"
+      },
+      {
+        "question": "ब्रॉडकास्टिंग के प्रकार हैं",
+        "options": [
+          "लिमिटेड ब्रॉडकास्ट और डायरेक्ट ब्रॉडकास्ट",
+          "यूनिकास्टिंग और मल्टीकास्टिंग",
+          "लिमिटेड ब्रॉडकास्ट और यूनिकास्टिंग",
+          "डायरेक्ट ब्रॉडकास्ट और मल्टीकास्टिंग"
+        ],
+        "correct": 0,
+        "explanation": "ब्रॉडकास्टिंग के दो प्रकार हैं: लिमिटेड ब्रॉडकास्ट और डायरेक्ट ब्रॉडकास्ट"
+      },
+      {
+        "question": "लिमिटेड ब्रॉडकास्ट में डेटा किस प्रकार भेजा जाता है?",
+        "options": [
+          "एक से सभी",
+          "एक से एक",
+          "सभी से एक",
+          "सभी से सभी"
+        ],
+        "correct": 0,
+        "explanation": "लिमिटेड ब्रॉडकास्ट में डेटा एक से सभी भेजा जाता है, लेकिन केवल एक ही नेटवर्क में"
+      },
+      {
+        "question": "डायरेक्ट ब्रॉडकास्ट में डेटा किस प्रकार भेजा जाता है?",
+        "options": [
+          "एक से सभी",
+          "एक से एक",
+          "सभी से एक",
+          "सभी से सभी"
+        ],
+        "correct": 0,
+        "explanation": "डायरेक्ट ब्रॉडकास्ट में डेटा एक से सभी भेजा जाता है, लेकिन अन्य नेटवर्क में भी"
+      },
+      {
+        "question": "मल्टीकास्टिंग में डेटा किस प्रकार भेजा जाता है?",
+        "options": [
+          "एक से एक",
+          "एक से सभी",
+          "एक से चुनिंदा",
+          "सभी से सभी"
+        ],
+        "correct": 2,
+        "explanation": "मल्टीकास्टिंग में डेटा एक से चुनिंदा भेजा जाता है, अर्थात एक स्रोत से कई गंतव्यों तक"
+      },
+      {
+        "question": "कंप्यूटर नेटवर्क में डेटा भेजने का मुख्य उद्देश्य क्या है?",
+        "options": [
+          "डेटा को साझा करना",
+          "डेटा को संग्रहीत करना",
+          "डेटा को प्रिंट करना",
+          "डेटा को नष्ट करना"
+        ],
+        "correct": 0,
+        "explanation": "कंप्यूटर नेटवर्क में डेटा भेजने का मुख्य उद्देश्य डेटा को साझा करना है"
+      },
+      {
+        "question": "कंप्यूटर नेटवर्क में डेटा भेजने के लिए कौन सा पता उपयोग किया जाता है?",
+        "options": [
+          "आईपी पता",
+          "मैक पता",
+          "पोर्ट नंबर",
+          "सभी ऊपर"
+        ],
+        "correct": 3,
+        "explanation": "कंप्यूटर नेटवर्क में डेटा भेजने के लिए आईपी पता, मैक पता और पोर्ट नंबर उपयोग किए जाते हैं"
+      }
+    ],
+    "mindmap": "mindmap\n  कंप्यूटर नेटवर्क((Computer Network))\n    कास्टिंग((Casting))\n      यूनिकास्टिंग((Unicasting))\n        एक से एक संचार((One-to-One Communication))\n        डेटा साझा करना((Sharing Data))\n      ब्रॉडकास्टिंग((Broadcasting))\n        सीमित ब्रॉडकास्ट((Limited Broadcast))\n          नेटवर्क के भीतर सभी होस्ट((All Hosts within Network))\n        डायरेक्ट ब्रॉडकास्ट((Direct Broadcast))\n          एक नेटवर्क से दूसरे नेटवर्क((One Network to Another))\n      मल्टीकास्टिंग((Multicasting))\n        एक से कई संचार((One-to-Many Communication))\n    नेटवर्क पते((Network Address))\n      आईपी पता((IP Address))\n        क्लास ए((Class A))\n        क्लास बी((Class B))\n        क्लास सी((Class C))",
+    "topics": [
+      "Introduction",
+      "Main Concepts",
+      "Key Takeaways"
+    ],
+    "duration": 348.389,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": true,
+      "quiz": true,
+      "mindmap": true
+    },
+    "progress_tracking": {
+      "notes_read": false,
+      "quiz_score": null,
+      "quiz_total": null,
+      "mastered_flashcards": [],
+      "mastered_count": 0,
+      "completed": false
+    },
+    "segments": [
+      {
+        "start": 0.03,
+        "end": 5.58,
+        "text": "hello friends welcome to weights measure"
+      },
+      {
+        "start": 2.49,
+        "end": 6.12,
+        "text": "the topic is type of casting in computer"
+      },
+      {
+        "start": 5.58,
+        "end": 8.099,
+        "text": "networks"
+      },
+      {
+        "start": 6.12,
+        "end": 11.0,
+        "text": "so generally computer networks may amuse"
+      },
+      {
+        "start": 8.099,
+        "end": 13.620000000000001,
+        "text": "girl-thing a unicasting broadcasting and"
+      },
+      {
+        "start": 11.0,
+        "end": 15.299,
+        "text": "multicast stream although your topic you"
+      },
+      {
+        "start": 13.62,
+        "end": 17.4,
+        "text": "have bought these impulse are toppika"
+      },
+      {
+        "start": 15.299,
+        "end": 19.529,
+        "text": "basically happen again again part of you"
+      },
+      {
+        "start": 17.4,
+        "end": 21.778999999999996,
+        "text": "guys go or join Liam computer network"
+      },
+      {
+        "start": 19.529,
+        "end": 24.869,
+        "text": "jovem start Katya though in kibarim a"
+      },
+      {
+        "start": 21.779,
+        "end": 26.73,
+        "text": "basically empathic kyookie eat tums Joe"
+      },
+      {
+        "start": 24.869,
+        "end": 29.189,
+        "text": "have OU's Oh Thea paper questions"
+      },
+      {
+        "start": 26.73,
+        "end": 31.439,
+        "text": "calendar or theoretical questions Annika"
+      },
+      {
+        "start": 29.189,
+        "end": 34.5,
+        "text": "Giada chance is there especially UGC net"
+      },
+      {
+        "start": 31.439,
+        "end": 36.51,
+        "text": "yeah k vs type of exams me gate key"
+      },
+      {
+        "start": 34.5,
+        "end": 39.059,
+        "text": "point of view say boss of important near"
+      },
+      {
+        "start": 36.51,
+        "end": 41.79,
+        "text": "but other up computer networks compadre"
+      },
+      {
+        "start": 39.059,
+        "end": 43.68,
+        "text": "other is kira concepts copper drive so"
+      },
+      {
+        "start": 41.79,
+        "end": 46.8,
+        "text": "definitely have to pathology hey what is"
+      },
+      {
+        "start": 43.68,
+        "end": 48.66,
+        "text": "a unicasting broadcasting and multicast"
+      },
+      {
+        "start": 46.8,
+        "end": 52.23,
+        "text": "stream the yeah hop a propeller a"
+      },
+      {
+        "start": 48.66,
+        "end": 54.089999999999996,
+        "text": "unicast Tosca McLovin ipecac cast me"
+      },
+      {
+        "start": 52.23,
+        "end": 56.43,
+        "text": "skip tonello death name unlock home"
+      },
+      {
+        "start": 54.09,
+        "end": 58.53,
+        "text": "santa career data because of networks"
+      },
+      {
+        "start": 56.43,
+        "end": 60.84,
+        "text": "key term a masquerade to network scam"
+      },
+      {
+        "start": 58.53,
+        "end": 63.3,
+        "text": "main purpose care we are sharing the"
+      },
+      {
+        "start": 60.84,
+        "end": 66.51,
+        "text": "data we are sharing the files to home"
+      },
+      {
+        "start": 63.3,
+        "end": 69.53999999999999,
+        "text": "Kotani Nobuko file share career unique a"
+      },
+      {
+        "start": 66.51,
+        "end": 76.59,
+        "text": "muslim have one unique a modulo P 1 1"
+      },
+      {
+        "start": 69.54,
+        "end": 78.63000000000001,
+        "text": "means 1 to 1 1 to 1 1 to 1 means a Banda"
+      },
+      {
+        "start": 76.59,
+        "end": 80.28,
+        "text": "eight-deuce rev Andre go Santa karai"
+      },
+      {
+        "start": 78.63,
+        "end": 83.009,
+        "text": "that is what a kind of one-to-one"
+      },
+      {
+        "start": 80.28,
+        "end": 87.119,
+        "text": "communication Jessica you could network"
+      },
+      {
+        "start": 83.009,
+        "end": 89.7,
+        "text": "a here this is network a network a car"
+      },
+      {
+        "start": 87.119,
+        "end": 93.03,
+        "text": "let's see address a 90 dot 0 dot 0 dot 0"
+      },
+      {
+        "start": 89.7,
+        "end": 95.43,
+        "text": "when a class a Colette were clear or a C"
+      },
+      {
+        "start": 93.03,
+        "end": 98.009,
+        "text": "let's say class a kind core network and"
+      },
+      {
+        "start": 95.43,
+        "end": 102.75,
+        "text": "network B or waha PP boss are a number"
+      },
+      {
+        "start": 98.009,
+        "end": 107.729,
+        "text": "of hosts a bugger yaha p8 host let's say"
+      },
+      {
+        "start": 102.75,
+        "end": 108.439,
+        "text": "m1 want to send our data to m2 in this"
+      },
+      {
+        "start": 107.729,
+        "end": 111.329,
+        "text": "network"
+      },
+      {
+        "start": 108.439,
+        "end": 112.58999999999999,
+        "text": "Mottola PRC agonda newsroom and they"
+      },
+      {
+        "start": 111.329,
+        "end": 114.83999999999999,
+        "text": "were messing send Carrere"
+      },
+      {
+        "start": 112.59,
+        "end": 117.42,
+        "text": "that is what a kind of one-to-one"
+      },
+      {
+        "start": 114.84,
+        "end": 119.04,
+        "text": "communication job journey used Curtin"
+      },
+      {
+        "start": 117.42,
+        "end": 121.259,
+        "text": "daily basis pay homage of messages"
+      },
+      {
+        "start": 119.04,
+        "end": 123.39,
+        "text": "co-signed Kathy from Java their message"
+      },
+      {
+        "start": 121.259,
+        "end": 125.67,
+        "text": "is one-to-one send Kathy although we can"
+      },
+      {
+        "start": 123.39,
+        "end": 127.43900000000001,
+        "text": "send a message to the group also but I'm"
+      },
+      {
+        "start": 125.67,
+        "end": 129.47,
+        "text": "generally one-to-one communication car"
+      }
+    ]
+  },
+  "4e255030-e133-42fe-a550-52b12dd152ff": {
+    "id": "4e255030-e133-42fe-a550-52b12dd152ff",
+    "title": "Message Switching",
+    "url": "https://youtu.be/T1rSrLPHLLI?si=oQZARXUCnKjBJtp4",
+    "language": "en",
+    "source": "youtube",
+    "created_at": "2026-06-19T15:16:51.063099",
+    "status": "complete",
+    "transcript": "Hello friends... Welcome to Gate Smashers In this video, we're going to discuss message switching Although the concept of message switching came after circuit switching Means the order in which these switching concepts has arrived is... Circuit switching, After circuit switching, message switching Then packet switching So the concept in circuit switching was, first communication begins and creates a connection When the connection gets fully established, then communication i.e. data transfer starts And circuit switching was actually designed for telephone networks, means the devices are already connected with each other All the devices are already connected, when we have to call or talk then first we have to create a setup there When the setup will get created as a connected way, a point to point communication will create when a point to point communication got created, then you can do data transfer, means you can talk Then came the concept of message switching, when the Store & Forward concept started actually which came in 1960 At around the 1960s, this concept of message switching arrived So the concept of message switching is... That rather than sending the data continuously, we are sending the message one by one Sending messages one by one means it's \"Hope by Hope delivery \" Means if we have devices connected, let's say Let's say they are connected in any way... Let's say A wants to send data to D So what will happen in circuit switching?... first a connection will create After the connection will get established, you can transfer the data continuously But in the message, no connection will create between A to D A will simply transmit its message and that message will reach to next hope Next hope is kind of switch... So it reached to switch or router and it took that message, stored it We generally used to use \"Store\" before on hard disk When this concept started, at that time messages used to get stored intermediately in the hard disk Gradually it got changed into RAM because hard disk is very slow If you are storing data on hard disk, and sending it to the next hope after processing So this is very delayed, it means there used to occur so much delay But now we use the concept of RAM here because RAM is much faster than hard disk So data reached from here to this hope, this hope stored it, processed it which means found its route where to send Then let's say it'll send this side... So it reached to next hope, and this hope will also store and will decide where to send Then it will send the data like this... So this is hope by hope delivery which is totally different from circuit switching There was a disadvantage of reservation in the circuit switching where we have kept bandwidth, CPU & resources reserved And circuit switching, packet switching which is the most important point here, I've already created videos on it I'll share their link with you in the description box So there are not many chances of questions coming on message switching But I'm asking you to do it, so that concept of switching can get complete Because circuit switching, packet and then datagram and virtual which we have already done The last one is message switching so the concept of message switching generally comes before packet switching We modified the message switching and it became packet switching So what is packet switching?... That same message which we were sending before hope by hope by using store and forward Now just divide that message... Means, rather than sending a big message hope by hope, Just divide that message into small packages and there you'll achieve parallelism or pipelining, Means multiple packets can flow parallelly So that reduces delay also and efficiency also increases So, you may not feel the concept of message switching is that much important But packet switching is very important, and I've already completed it, just check it once So the basic point of message switching is that it is the predecessor of a packet, It has a \"store and forward\" strategy with hope by hope delivery So the advantage with this is that there is no reservation, means efficiency is better than the circuit switching But the delay would be obviously more... Why delay would be more? Because it is \"hope by hope\", so obviously there will be a delay as every hope is processing it So delay would be always more and efficiency will be also more Because we are not doing reservations here If I'm comparing with the circuit switching, I'm not comparing with the packets but with circuits So we managed the traffic also little bit properly, we won't say that our route will stay the same as this always We are following different routes, we are sending data on different routes So we are using the whole network in the proper way in message switching or packet switching Which was not there in the circuit switching so these are the only main differences in circuit and message switching But if you'll see the difference in message and packet then what we generally do in the packet is, simply rather than sending one big message, we choose to send multiple small packets parallelly on different routes So this is all about the concept of message switching Thank You!",
+    "notes": "## Introduction to Message Switching\nMessage switching is a concept that emerged after circuit switching, with the primary goal of improving the efficiency of data transfer. In this section, we will explore the key concepts and differences between message switching and circuit switching.\n\n### Circuit Switching vs Message Switching\nThe main difference between circuit switching and message switching lies in the way data is transferred:\n* **Circuit Switching**: A connection is established between the sender and receiver before data transfer begins. This connection is dedicated to the communication session, and resources such as bandwidth and CPU are reserved for the duration of the session.\n* **Message Switching**: Data is sent in individual messages, and each message is stored and forwarded to the next hop (a switch or router) without establishing a dedicated connection.\n\n### Key Concepts in Message Switching\nSome key concepts in message switching include:\n* **Store & Forward**: Messages are stored at each hop before being forwarded to the next hop.\n* **Hope by Hope Delivery**: Messages are delivered one by one, with each hop storing and processing the message before sending it to the next hop.\n* **Use of RAM**: Messages are stored in RAM, which is faster than hard disk, to reduce delay.\n\n### Advantages of Message Switching\nThe advantages of message switching include:\n* **No Reservation of Resources**: Unlike circuit switching, message switching does not reserve resources such as bandwidth and CPU, making it more efficient.\n* **Reduced Delay**: The use of RAM instead of hard disk reduces delay in message switching.\n\n### Comparison of Switching Concepts\nThe following table summarizes the key differences between circuit switching, message switching, and packet switching:\n\n| Switching Concept | Connection Establishment | Resource Reservation | Data Transfer |\n| --- | --- | --- | --- |\n| Circuit Switching | Dedicated connection established before data transfer | Yes | Continuous data transfer |\n| Message Switching | No dedicated connection established | No | Hope by hope delivery |\n| Packet Switching | No dedicated connection established | No | Packetized data transfer |\n\n### Important Terms\nSome important terms to remember include:\n* **Message Switching**: A concept that involves sending data in individual messages, with each message stored and forwarded to the next hop.\n* **Store & Forward**: A technique used in message switching where messages are stored at each hop before being forwarded to the next hop.\n* **Hope by Hope Delivery**: A technique used in message switching where messages are delivered one by one, with each hop storing and processing the message before sending it to the next hop.\n\n## Exam Tips\nWhen preparing for exams, make sure to:\n* Understand the key differences between circuit switching, message switching, and packet switching.\n* Remember the advantages and disadvantages of each switching concept.\n* Be able to explain the store & forward technique and hope by hope delivery in message switching.\n* Practice solving problems related to message switching and other switching concepts.",
+    "flashcards": [
+      {
+        "front": "What is message switching?",
+        "back": "Message switching is a concept where data is sent one by one, rather than continuously, using a store and forward approach.",
+        "topic": "Message Switching"
+      },
+      {
+        "front": "What is the order of switching concepts?",
+        "back": "The order is: Circuit Switching, Message Switching, Packet Switching",
+        "topic": "Switching Concepts"
+      },
+      {
+        "front": "What is circuit switching?",
+        "back": "Circuit switching is a concept where a connection is established before data transfer begins, and the connection is reserved for the duration of the communication.",
+        "topic": "Circuit Switching"
+      },
+      {
+        "front": "What is the main difference between circuit switching and message switching?",
+        "back": "In circuit switching, a connection is established before data transfer, while in message switching, no connection is established and data is sent one by one using a store and forward approach.",
+        "topic": "Switching Concepts"
+      },
+      {
+        "front": "What is hope by hope delivery?",
+        "back": "Hope by hope delivery is a method of data transfer where data is sent from one node to another, stored and processed at each node, and then forwarded to the next node.",
+        "topic": "Message Switching"
+      },
+      {
+        "front": "Why was RAM used instead of hard disk in message switching?",
+        "back": "RAM is faster than hard disk, reducing the delay in storing and processing data.",
+        "topic": "Message Switching"
+      },
+      {
+        "front": "What is the disadvantage of circuit switching?",
+        "back": "The disadvantage of circuit switching is the reservation of bandwidth, CPU, and resources, which can lead to inefficient use of resources.",
+        "topic": "Circuit Switching"
+      },
+      {
+        "front": "When did the concept of message switching arrive?",
+        "back": "The concept of message switching arrived in the 1960s.",
+        "topic": "Message Switching"
+      },
+      {
+        "front": "What is store and forward concept?",
+        "back": "Store and forward concept is a method of data transfer where data is stored at each node, processed, and then forwarded to the next node.",
+        "topic": "Message Switching"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What is the order in which the switching concepts arrived?",
+        "options": [
+          "Packet switching, circuit switching, message switching",
+          "Circuit switching, message switching, packet switching",
+          "Message switching, circuit switching, packet switching",
+          "Packet switching, message switching, circuit switching"
+        ],
+        "correct": 1,
+        "explanation": "The correct order is circuit switching, message switching, and then packet switching."
+      },
+      {
+        "question": "What was circuit switching originally designed for?",
+        "options": [
+          "Computer networks",
+          "Telephone networks",
+          "Internet networks",
+          "Wireless networks"
+        ],
+        "correct": 1,
+        "explanation": "Circuit switching was originally designed for telephone networks."
+      },
+      {
+        "question": "What is the concept of message switching based on?",
+        "options": [
+          "Store & Forward concept",
+          "Packet switching concept",
+          "Circuit switching concept",
+          "Hope by hope delivery concept"
+        ],
+        "correct": 0,
+        "explanation": "Message switching is based on the Store & Forward concept."
+      },
+      {
+        "question": "How does message switching differ from circuit switching?",
+        "options": [
+          "Message switching creates a connection before data transfer, while circuit switching does not",
+          "Message switching does not create a connection before data transfer, while circuit switching does",
+          "Message switching is faster than circuit switching",
+          "Message switching is slower than circuit switching"
+        ],
+        "correct": 1,
+        "explanation": "Message switching differs from circuit switching in that it does not create a connection before data transfer."
+      },
+      {
+        "question": "What type of memory is used in message switching to store messages?",
+        "options": [
+          "Hard disk",
+          "RAM",
+          "ROM",
+          "Flash memory"
+        ],
+        "correct": 1,
+        "explanation": "RAM is used in message switching to store messages because it is faster than hard disk."
+      },
+      {
+        "question": "What is the term used to describe the delivery of messages in message switching?",
+        "options": [
+          "Hope by hope delivery",
+          "Packet by packet delivery",
+          "Message by message delivery",
+          "Circuit by circuit delivery"
+        ],
+        "correct": 0,
+        "explanation": "The term 'hope by hope delivery' is used to describe the delivery of messages in message switching."
+      },
+      {
+        "question": "What was the original storage method used in message switching?",
+        "options": [
+          "RAM",
+          "Hard disk",
+          "Flash memory",
+          "ROM"
+        ],
+        "correct": 1,
+        "explanation": "The original storage method used in message switching was hard disk, but it was later changed to RAM due to its faster speed."
+      }
+    ],
+    "mindmap": "mindmap\n  Switching Concepts((Switching Concepts))\n    Circuit Switching\n      Connection Establishment\n      Point to Point Communication\n      Data Transfer\n      Designed for Telephone Networks\n    Message Switching\n      Store & Forward Concept\n      Hope by Hope Delivery\n      No Connection Between Sender and Receiver\n      Intermediate Storage\n        Hard Disk\n        RAM\n      Advantages Over Circuit Switching\n      Disadvantages\n    Packet Switching\n      Related to Message Switching\n      Links to Additional Resources",
+    "topics": [
+      "Circuit Switching",
+      "Message Switching",
+      "Packet Switching",
+      "Telephone Networks",
+      "Store & Forward Concept"
+    ],
+    "duration": 353.164,
+    "progress": {
+      "transcript": true,
+      "notes": true,
+      "flashcards": true,
+      "quiz": true,
+      "mindmap": true
+    },
+    "progress_tracking": {
+      "notes_read": true,
+      "quiz_score": 7,
+      "quiz_total": 7,
+      "mastered_flashcards": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mastered_count": 9,
+      "completed": true
+    },
+    "segments": [
+      {
+        "start": 0.9,
+        "end": 2.557,
+        "text": "Hello friends... Welcome to Gate Smashers"
+      },
+      {
+        "start": 3.071,
+        "end": 5.986000000000001,
+        "text": "In this video, we're going to discuss message switching"
+      },
+      {
+        "start": 6.4,
+        "end": 10.357,
+        "text": "Although the concept of message switching came after circuit switching"
+      },
+      {
+        "start": 10.714,
+        "end": 14.186,
+        "text": "Means the order in which these switching concepts has arrived is... Circuit switching,"
+      },
+      {
+        "start": 14.786,
+        "end": 18.014,
+        "text": "After circuit switching, message switching"
+      },
+      {
+        "start": 18.3,
+        "end": 20.171,
+        "text": "Then packet switching"
+      },
+      {
+        "start": 20.657,
+        "end": 25.5,
+        "text": "So the concept in circuit switching was, first communication begins and creates a connection"
+      },
+      {
+        "start": 26.043,
+        "end": 31.957,
+        "text": "When the connection gets fully established, then communication i.e. data transfer starts"
+      },
+      {
+        "start": 32.386,
+        "end": 39.014,
+        "text": "And circuit switching was actually designed for telephone networks, means the devices are already connected with each other"
+      },
+      {
+        "start": 39.571,
+        "end": 48.143,
+        "text": "All the devices are already connected, when we have to call or talk then first we have to create a setup there"
+      },
+      {
+        "start": 48.514,
+        "end": 52.714000000000006,
+        "text": "When the setup will get created as a connected way, a point to point communication will create"
+      },
+      {
+        "start": 53.071,
+        "end": 58.271,
+        "text": "when a point to point communication got created, then you can do data transfer, means you can talk"
+      },
+      {
+        "start": 58.857,
+        "end": 69.871,
+        "text": "Then came the concept of message switching, when the Store & Forward concept started actually which came in 1960"
+      },
+      {
+        "start": 70.157,
+        "end": 73.529,
+        "text": "At around the 1960s, this concept of message switching arrived"
+      },
+      {
+        "start": 73.971,
+        "end": 84.486,
+        "text": "So the concept of message switching is... That rather than sending the data continuously, we are sending the message one by one"
+      },
+      {
+        "start": 84.686,
+        "end": 88.971,
+        "text": "Sending messages one by one means it's \"Hope by Hope delivery \""
+      },
+      {
+        "start": 89.243,
+        "end": 94.386,
+        "text": "Means if we have devices connected, let's say"
+      },
+      {
+        "start": 95.457,
+        "end": 103.443,
+        "text": "Let's say they are connected in any way... Let's say A wants to send data to D"
+      },
+      {
+        "start": 103.843,
+        "end": 110.443,
+        "text": "So what will happen in circuit switching?... first a connection will create"
+      },
+      {
+        "start": 110.514,
+        "end": 114.75699999999999,
+        "text": "After the connection will get established, you can transfer the data continuously"
+      },
+      {
+        "start": 115.114,
+        "end": 119.37100000000001,
+        "text": "But in the message, no connection will create between A to D"
+      },
+      {
+        "start": 119.886,
+        "end": 125.229,
+        "text": "A will simply transmit its message and that message will reach to next hope"
+      },
+      {
+        "start": 125.543,
+        "end": 133.41400000000002,
+        "text": "Next hope is kind of switch... So it reached to switch or router and it took that message, stored it"
+      },
+      {
+        "start": 133.886,
+        "end": 136.814,
+        "text": "We generally used to use \"Store\" before on hard disk"
+      },
+      {
+        "start": 137.871,
+        "end": 145.31400000000002,
+        "text": "When this concept started, at that time messages used to get stored intermediately in the hard disk"
+      },
+      {
+        "start": 145.6,
+        "end": 149.72899999999998,
+        "text": "Gradually it got changed into RAM because hard disk is very slow"
+      },
+      {
+        "start": 150.086,
+        "end": 155.429,
+        "text": "If you are storing data on hard disk, and sending it to the next hope after processing"
+      },
+      {
+        "start": 156.057,
+        "end": 160.22899999999998,
+        "text": "So this is very delayed, it means there used to occur so much delay"
+      },
+      {
+        "start": 160.7,
+        "end": 166.671,
+        "text": "But now we use the concept of RAM here because RAM is much faster than hard disk"
+      },
+      {
+        "start": 167.0,
+        "end": 176.943,
+        "text": "So data reached from here to this hope, this hope stored it, processed it which means found its route where to send"
+      },
+      {
+        "start": 177.329,
+        "end": 185.386,
+        "text": "Then let's say it'll send this side... So it reached to next hope, and this hope will also store and will decide where to send"
+      },
+      {
+        "start": 185.771,
+        "end": 192.89999999999998,
+        "text": "Then it will send the data like this... So this is hope by hope delivery which is totally different from circuit switching"
+      },
+      {
+        "start": 193.071,
+        "end": 201.129,
+        "text": "There was a disadvantage of reservation in the circuit switching where we have kept bandwidth, CPU & resources reserved"
+      },
+      {
+        "start": 201.486,
+        "end": 208.51399999999998,
+        "text": "And circuit switching, packet switching which is the most important point here, I've already created videos on it"
+      },
+      {
+        "start": 208.6,
+        "end": 211.51399999999998,
+        "text": "I'll share their link with you in the description box"
+      },
+      {
+        "start": 212.057,
+        "end": 216.171,
+        "text": "So there are not many chances of questions coming on message switching"
+      },
+      {
+        "start": 216.471,
+        "end": 220.214,
+        "text": "But I'm asking you to do it, so that concept of switching can get complete"
+      },
+      {
+        "start": 220.629,
+        "end": 225.171,
+        "text": "Because circuit switching, packet and then datagram and virtual which we have already done"
+      },
+      {
+        "start": 225.543,
+        "end": 227.4,
+        "text": "The last one is message switching"
+      },
+      {
+        "start": 227.814,
+        "end": 232.286,
+        "text": "so the concept of message switching generally comes before packet switching"
+      },
+      {
+        "start": 232.857,
+        "end": 238.057,
+        "text": "We modified the message switching and it became packet switching"
+      },
+      {
+        "start": 238.529,
+        "end": 245.214,
+        "text": "So what is packet switching?... That same message which we were sending before hope by hope by using store and forward"
+      },
+      {
+        "start": 245.557,
+        "end": 252.214,
+        "text": "Now just divide that message... Means, rather than sending a big message hope by hope,"
+      },
+      {
+        "start": 252.629,
+        "end": 259.343,
+        "text": "Just divide that message into small packages and there you'll achieve parallelism or pipelining,"
+      },
+      {
+        "start": 259.443,
+        "end": 261.743,
+        "text": "Means multiple packets can flow parallelly"
+      },
+      {
+        "start": 262.186,
+        "end": 267.286,
+        "text": "So that reduces delay also and efficiency also increases"
+      },
+      {
+        "start": 267.529,
+        "end": 272.3,
+        "text": "So, you may not feel the concept of message switching is that much important"
+      },
+      {
+        "start": 272.6,
+        "end": 278.629,
+        "text": "But packet switching is very important, and I've already completed it, just check it once"
+      },
+      {
+        "start": 278.914,
+        "end": 282.59999999999997,
+        "text": "So the basic point of message switching is that it is the predecessor of a packet,"
+      },
+      {
+        "start": 283.057,
+        "end": 286.043,
+        "text": "It has a \"store and forward\" strategy with hope by hope delivery"
+      }
+    ]
+  }
+}
