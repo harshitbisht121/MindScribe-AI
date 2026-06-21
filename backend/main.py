@@ -164,9 +164,49 @@ async def get_youtube_transcript(url: str, language: str = "en") -> dict:
             return {"text": full_text, "segments": segments, "video_id": video_id, "duration": get_val(data[-1], 'start') if data else 0}
         return await asyncio.get_event_loop().run_in_executor(None, fetch)
     except Exception as e:
-        if GROQ_API_KEY:
-            raise HTTPException(status_code=400, detail=f"Could not retrieve transcript. {str(e)}")
-    return {"text": f"Demo YouTube transcript for {video_id}", "segments": [], "video_id": video_id, "duration": 600, "source": "demo"}
+        if not GROQ_API_KEY:
+            return {"text": f"Demo YouTube transcript for {video_id}", "segments": [], "video_id": video_id, "duration": 600, "source": "demo"}
+            
+        # FALLBACK: Use yt-dlp + Groq transcription
+        try:
+            import yt_dlp
+            
+            def download_audio():
+                temp_dir = tempfile.gettempdir()
+                out_tmpl = os.path.join(temp_dir, f'{video_id}_%(id)s.%(ext)s')
+                ydl_opts = {
+                    'format': 'worstaudio[ext=m4a]/worstaudio/bestaudio',
+                    'outtmpl': out_tmpl,
+                    'noplaylist': True,
+                    'quiet': True,
+                }
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    info = ydl.extract_info(url, download=False)
+                    duration = info.get('duration', 0)
+                    
+                    # 45 mins limit (~25MB audio limit for Groq)
+                    if duration > 45 * 60:
+                        raise ValueError(f"Video is too long ({int(duration/60)} mins). Max duration is 45 minutes for AI processing.")
+                    
+                    info = ydl.extract_info(url, download=True)
+                    return ydl.prepare_filename(info), duration
+                    
+            audio_path, duration = await asyncio.get_event_loop().run_in_executor(None, download_audio)
+            
+            try:
+                transcript_result = await transcribe_with_groq(audio_path, language)
+                transcript_result["video_id"] = video_id
+                if not transcript_result.get("duration"):
+                    transcript_result["duration"] = duration
+                return transcript_result
+            finally:
+                if os.path.exists(audio_path):
+                    try:
+                        os.remove(audio_path)
+                    except Exception:
+                        pass
+        except Exception as fallback_e:
+            raise HTTPException(status_code=400, detail=f"Could not retrieve transcript directly, and fallback transcription failed. Error: {str(fallback_e)}")
 
 @app.get("/")
 async def root():
