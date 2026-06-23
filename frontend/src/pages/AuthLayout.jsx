@@ -7,6 +7,7 @@ export const AuthLayout = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [username, setUsername] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -74,14 +75,22 @@ export const AuthLayout = () => {
             required
             style={{ padding: "12px 16px", borderRadius: 10, border: `1px solid ${colors.border}`, background: colors.bg, color: colors.text, fontSize: 15 }}
           />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-            style={{ padding: "12px 16px", borderRadius: 10, border: `1px solid ${colors.border}`, background: colors.bg, color: colors.text, fontSize: 15 }}
-          />
+          <div style={{ position: "relative", display: "flex", width: "100%" }}>
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              required
+              style={{ width: "100%", padding: "12px 16px", paddingRight: 40, borderRadius: 10, border: `1px solid ${colors.border}`, background: colors.bg, color: colors.text, fontSize: 15, boxSizing: "border-box" }}
+            />
+            <div 
+              onClick={() => setShowPassword(!showPassword)}
+              style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", cursor: "pointer", color: colors.textMuted, display: "flex", alignItems: "center", fontSize: 16 }}
+            >
+              {showPassword ? "👁️" : "🙈"}
+            </div>
+          </div>
           <button type="submit" disabled={loading} style={{
             background: colors.accent, color: "#fff", border: "none", padding: 14, borderRadius: 10, fontSize: 16, fontWeight: 600, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1
           }}>
