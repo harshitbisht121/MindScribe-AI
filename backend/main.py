@@ -179,6 +179,7 @@ async def get_youtube_transcript(url: str, language: str = "en") -> dict:
                     'outtmpl': out_tmpl,
                     'noplaylist': True,
                     'quiet': True,
+                    'rm_cachedir': True,
                 }
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     info = ydl.extract_info(url, download=False)
