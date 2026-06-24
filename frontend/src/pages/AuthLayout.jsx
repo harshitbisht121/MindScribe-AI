@@ -42,7 +42,7 @@ export const AuthLayout = () => {
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: colors.bg }}>
-      <div style={{ background: colors.surface, padding: 40, borderRadius: 20, width: "100%", maxWidth: 400, border: `1px solid ${colors.border}` }}>
+      <div className="auth-container" style={{ background: colors.surface, borderRadius: 20, border: `1px solid ${colors.border}` }}>
         <h1 style={{ fontSize: 24, fontWeight: 800, marginBottom: 8, color: colors.text, textAlign: "center" }}>
           {isLogin ? "Welcome back" : "Create an account"}
         </h1>

@@ -47,7 +47,7 @@ export const QuizView = ({ quiz, onQuizSubmit, savedScore = null, savedTotal = n
               <div key={i} style={{ background: colors.surface, borderRadius: 16, padding: 20, border: `1px solid ${colors.border}` }}>
                 <div style={{ color: colors.textMuted, fontSize: 12, marginBottom: 8 }}>Question {i + 1}</div>
                 <div style={{ color: colors.text, fontWeight: 600, fontSize: 15, marginBottom: 16 }}>{q.question}</div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <div className="quiz-options" style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {q.options.map((opt, j) => {
                     let bg = colors.bg, borderColor = colors.border, textColor = colors.text;
                     if (selected === j) {
@@ -86,7 +86,7 @@ export const QuizView = ({ quiz, onQuizSubmit, savedScore = null, savedTotal = n
           <div key={i} style={{ background: colors.surface, borderRadius: 16, padding: 20, border: `1px solid ${isCorrect ? colors.green : selected !== undefined ? colors.red : colors.border}` }}>
             <div style={{ color: colors.textMuted, fontSize: 12, marginBottom: 8 }}>Question {i + 1}</div>
             <div style={{ color: colors.text, fontWeight: 600, fontSize: 15, marginBottom: 16 }}>{q.question}</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div className="quiz-options" style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {q.options.map((opt, j) => {
                 let bg = colors.bg, borderColor = colors.border, textColor = colors.text;
                 if (j === q.correct) { bg = colors.greenDim; borderColor = colors.green; textColor = colors.green; }

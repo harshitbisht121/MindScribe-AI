@@ -19,7 +19,7 @@ export const Dashboard = ({ lectures, onSelect, onDelete }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+      <div className="grid-3-col">
         {[
           { label: "Total Lectures", value: stats.total, icon: "book", color: colors.accent },
           { label: "Completed Lectures", value: stats.complete, icon: "check", color: colors.green },
@@ -37,13 +37,13 @@ export const Dashboard = ({ lectures, onSelect, onDelete }) => {
 
       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
         {lectures.map(l => (
-          <div key={l.id} style={{ background: colors.surface, borderRadius: 16, padding: 18, border: `1px solid ${colors.border}`, cursor: "pointer", transition: "border-color 0.2s", display: "flex", alignItems: "center", gap: 14 }} onClick={() => onSelect(l.id)} onMouseEnter={e => e.currentTarget.style.borderColor = colors.accent} onMouseLeave={e => e.currentTarget.style.borderColor = colors.border}>
+          <div key={l.id} className="lecture-list-item" style={{ background: colors.surface, borderRadius: 16, padding: 18, border: `1px solid ${colors.border}`, cursor: "pointer", transition: "border-color 0.2s", display: "flex", alignItems: "center", gap: 14 }} onClick={() => onSelect(l.id)} onMouseEnter={e => e.currentTarget.style.borderColor = colors.accent} onMouseLeave={e => e.currentTarget.style.borderColor = colors.border}>
             <div style={{ width: 44, height: 44, borderRadius: 12, background: colors.accentDim, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <Icon name={l.source === "youtube" ? "youtube" : l.source === "live" ? "mic" : "upload"} size={20} color={colors.accent} />
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ color: colors.text, fontWeight: 600, fontSize: 14, marginBottom: 4, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{l.title}</div>
-              <div style={{ display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
+              <div className="lecture-list-item-badges" style={{ display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
                 {l.has_notes && <Badge color={l.progress_tracking?.notes_read ? "green" : "accent"}>{l.progress_tracking?.notes_read ? "Notes Read" : "Notes"}</Badge>}
                 {l.flashcard_count > 0 && (
                   <Badge color={l.progress_tracking?.mastered_count === l.flashcard_count ? "green" : "yellow"}>

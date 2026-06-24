@@ -69,7 +69,7 @@ export const FlashcardViewer = ({ flashcards, mastered = [], onUpdateMastered })
           ))}
         </div>
         
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div className="flashcard-filters" style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {topics.length > 1 && (
             <select 
               value={selectedTopic} 
@@ -80,9 +80,9 @@ export const FlashcardViewer = ({ flashcards, mastered = [], onUpdateMastered })
               {topics.filter(t => t !== "all").map(t => <option key={t} value={t}>{t}</option>)}
             </select>
           )}
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div className="flashcard-progress" style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <span style={{ color: colors.textMuted, fontSize: 12 }}>{progress}% mastered</span>
-            <div style={{ width: 80 }}><ProgressBar value={progress} color={colors.green} /></div>
+            <div className="flashcard-progress-bar" style={{ width: 80 }}><ProgressBar value={progress} color={colors.green} /></div>
           </div>
         </div>
       </div>
@@ -112,12 +112,12 @@ export const FlashcardViewer = ({ flashcards, mastered = [], onUpdateMastered })
         </div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div className="flashcard-nav" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <button onClick={prev} style={{ background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: 10, padding: "10px 16px", color: colors.text, cursor: "pointer", display: "flex", alignItems: "center", gap: 6 }}>
           <Icon name="chevronLeft" size={16} /> Prev
         </button>
-        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-          <span style={{ color: colors.textMuted, fontSize: 13 }}>{idx + 1} / {filtered.length}</span>
+        <div className="flashcard-nav-center" style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          <span style={{ color: colors.textMuted, fontSize: 13, whiteSpace: "nowrap" }}>Card {idx + 1} of {filtered.length}</span>
           <button onClick={toggleKnown} style={{
             background: known.has(flashcards.indexOf(card)) ? colors.greenDim : colors.surface,
             border: `1px solid ${known.has(flashcards.indexOf(card)) ? colors.green : colors.border}`,

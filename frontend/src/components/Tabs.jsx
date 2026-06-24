@@ -2,7 +2,7 @@ import { colors } from "../utils/colors";
 import { Icon } from "./Icon";
 
 export const Tabs = ({ tabs, active, onChange }) => (
-  <div style={{ display: "flex", gap: 4, background: colors.bg, borderRadius: 10, padding: 4, flexWrap: "wrap" }}>
+  <div className="tabs-container" style={{ background: colors.bg, borderRadius: 10, padding: 4 }}>
     {tabs.map(t => (
       <button key={t.id} onClick={() => onChange(t.id)} style={{
         padding: "8px 16px", borderRadius: 8, border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 6, fontSize: 13, fontWeight: 500, transition: "all 0.2s",

@@ -41,7 +41,7 @@ export const UploadPanel = ({ onSuccess }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <div style={{ display: "flex", gap: 4, background: colors.bg, borderRadius: 10, padding: 4 }}>
+      <div className="mode-switcher" style={{ background: colors.bg, borderRadius: 10, padding: 4 }}>
         {[{ id: "file", label: "Upload File", icon: "upload" }, { id: "youtube", label: "YouTube URL", icon: "youtube" }, { id: "live", label: "Live Lecture", icon: "mic" }].map(m => (
           <button key={m.id} onClick={() => setMode(m.id)} style={{
             flex: 1, padding: "10px 12px", borderRadius: 8, border: "none", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontSize: 13, fontWeight: 500, transition: "all 0.2s",
@@ -96,7 +96,7 @@ export const UploadPanel = ({ onSuccess }) => {
 
       {mode !== "live" && (
         <>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+          <div className="grid-2-col">
             <div>
               <label style={{ color: colors.textMuted, fontSize: 12, fontWeight: 500, display: "block", marginBottom: 6 }}>Title (optional)</label>
               <input

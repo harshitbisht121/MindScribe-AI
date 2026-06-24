@@ -1,0 +1,257 @@
+/* Responsive Utilities */
+
+/* Main App Layout */
+.app-container {
+  padding: 32px 24px !important;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 24px 16px !important;
+  }
+}
+
+/* Header & Navigation */
+.header-container {
+  padding: 0 24px !important;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.hamburger-btn {
+  display: none !important;
+}
+
+.mobile-nav-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 16px !important;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .hamburger-btn {
+    display: flex !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: inherit;
+  }
+
+  .mobile-nav-overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #11131A; /* colors.surface approx */
+    border-bottom: 1px solid #1E212B; /* colors.border */
+    padding: 16px;
+    gap: 8px;
+    z-index: 99;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+}
+
+/* Auth Container */
+.auth-container {
+  padding: 40px !important;
+  max-width: 400px !important;
+  width: 100% !important;
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 24px !important;
+    width: calc(100% - 32px) !important;
+    margin: 0 16px;
+  }
+  .responsive-table-container {
+    overflow-x: auto;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+  .table-inner {
+    min-width: 480px;
+  }
+}
+
+/* Dashboard Grids */
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .grid-3-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3-col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.lecture-list-item {
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .lecture-list-item-badges {
+    margin-top: 8px;
+  }
+}
+
+/* Upload Panel */
+.mode-switcher {
+  display: flex;
+  gap: 4px;
+}
+
+@media (max-width: 600px) {
+  .mode-switcher {
+    flex-direction: column !important;
+  }
+  .mode-switcher button {
+    justify-content: flex-start !important;
+  }
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .grid-2-col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Lecture Detail */
+.lecture-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .lecture-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .lecture-header button {
+    width: 100%;
+    justify-content: center;
+  }
+  .lecture-header-badges {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .tabs-container {
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tabs-container button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+/* Common Modifiers */
+@media (max-width: 768px) {
+  .wrap-on-mobile {
+    flex-wrap: wrap !important;
+  }
+}
+
+.header-tagline {
+  font-size: clamp(8px, 2.5vw, 10px);
+  white-space: nowrap;
+}
+
+@media (max-width: 320px) {
+  .header-tagline {
+    display: none !important;
+  }
+}
+
+/* Ultra-small device specific utilities (<= 360px) */
+@media (max-width: 360px) {
+  .flashcard-filters {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .flashcard-progress {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100%;
+    gap: 4px !important;
+  }
+  .flashcard-progress-bar {
+    width: 100% !important;
+  }
+  .flashcard-nav {
+    flex-wrap: wrap !important;
+    gap: 12px;
+    justify-content: center !important;
+  }
+  .flashcard-nav > button {
+    width: calc(50% - 6px);
+    justify-content: center;
+  }
+  .flashcard-nav-center {
+    width: 100%;
+    justify-content: space-between;
+    order: -1;
+    margin-bottom: 8px;
+  }
+  .header-title {
+    font-size: 14px !important;
+  }
+  .quiz-options {
+    flex-direction: column !important;
+  }
+  .mermaid-container {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .notes-actions {
+    flex-direction: column !important;
+  }
+  .notes-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Touch targets */
+button, select {
+  min-height: 44px;
+}

@@ -21,6 +21,7 @@ export default function App() {
   const [backendOk, setBackendOk] = useState(null);
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const fetchLectures = useCallback(async () => {
     try {
@@ -105,18 +106,18 @@ export default function App() {
       `}</style>
 
       {/* Header */}
-      <div style={{ background: colors.surface, borderBottom: `1px solid ${colors.border}`, padding: "0 24px", height: 60, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }} className="no-print">
+      <div style={{ background: colors.surface, borderBottom: `1px solid ${colors.border}`, height: 60, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }} className="no-print header-container">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ width: 36, height: 36, borderRadius: 10, background: `linear-gradient(135deg, ${colors.accent}, #A855F7)`, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Icon name="book" size={18} color="white" />
           </div>
           <div>
-            <div style={{ fontWeight: 800, fontSize: 16, background: `linear-gradient(90deg, ${colors.accentLight}, #C084FC)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>MindScribe AI</div>
-            <div style={{ color: colors.textDim, fontSize: 10, marginTop: -2 }}>Transform Lectures into Knowledge</div>
+            <div className="header-title" style={{ fontWeight: 800, fontSize: 16, background: `linear-gradient(90deg, ${colors.accentLight}, #C084FC)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>MindScribe AI</div>
+            <div className="header-tagline" style={{ color: colors.textDim, fontSize: 10, marginTop: -2 }}>Transform Lectures into Knowledge</div>
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 6 }}>
+        <div className="desktop-nav">
           {[
             { id: "home", label: "My Lectures", icon: "book" },
             { id: "upload", label: "New Lecture", icon: "upload" },
@@ -132,9 +133,9 @@ export default function App() {
           ))}
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <div className="desktop-nav" style={{ alignItems: "center", gap: 8 }}>
           <div style={{ width: 8, height: 8, borderRadius: "50%", background: backendOk === true ? colors.green : backendOk === false ? colors.red : colors.yellow }} />
-          <span style={{ color: colors.textDim, fontSize: 12, marginRight: 16 }}>{backendOk === true ? "Backend Connected" : backendOk === false ? "Backend Offline (Demo Mode)" : "Connecting..."}</span>
+          <span style={{ color: colors.textDim, fontSize: 12, marginRight: 16 }}>{backendOk === true ? "Backend Connected" : backendOk === false ? "Backend Offline" : "Connecting..."}</span>
           {user?.displayName && (
             <span style={{ color: colors.text, fontSize: 13, marginRight: 12, fontWeight: 500 }}>
               Hi, {user.displayName}
@@ -144,10 +145,45 @@ export default function App() {
             Sign Out
           </button>
         </div>
+
+        <button className="hamburger-btn" onClick={() => setMenuOpen(!menuOpen)}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        {menuOpen && (
+          <div className="mobile-nav-overlay no-print">
+            {[
+              { id: "home", label: "My Lectures", icon: "book" },
+              { id: "upload", label: "New Lecture", icon: "upload" },
+              { id: "search", label: "Search", icon: "search" },
+              { id: "profile", label: "Profile", icon: "user" },
+            ].map(v => (
+              <button key={v.id} onClick={() => { setView(v.id); if (v.id !== "detail") setSelectedId(null); setMenuOpen(false); }} style={{
+                background: view === v.id ? colors.accentDim : "transparent", color: view === v.id ? colors.accentLight : colors.textMuted,
+                border: `1px solid ${view === v.id ? colors.accent : "transparent"}`, borderRadius: 10, padding: "12px 16px", cursor: "pointer", display: "flex", alignItems: "center", gap: 12, fontSize: 15, fontWeight: 500, width: "100%", justifyContent: "flex-start"
+              }}>
+                <Icon name={v.icon} size={18} /> {v.label}
+              </button>
+            ))}
+            <div style={{ height: 1, background: colors.border, margin: "8px 0" }} />
+            <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 16px" }}>
+              <div style={{ width: 8, height: 8, borderRadius: "50%", background: backendOk === true ? colors.green : backendOk === false ? colors.red : colors.yellow }} />
+              <span style={{ color: colors.textDim, fontSize: 12 }}>{backendOk === true ? "Backend Connected" : backendOk === false ? "Backend Offline" : "Connecting..."}</span>
+            </div>
+            {user?.displayName && (
+              <div style={{ color: colors.text, fontSize: 13, padding: "0 16px 8px 16px", fontWeight: 500 }}>
+                Hi, {user.displayName}
+              </div>
+            )}
+            <button onClick={() => { signOut(auth); setMenuOpen(false); }} style={{ background: "transparent", border: `1px solid ${colors.border}`, color: colors.textMuted, padding: "12px 16px", borderRadius: 10, cursor: "pointer", fontSize: 14, width: "100%", textAlign: "left" }}>
+              Sign Out
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Main */}
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 24px" }}>
+      <div className="app-container" style={{ maxWidth: 900, margin: "0 auto" }}>
         {view === "home" && (
           <div className="no-print">
             <div style={{ marginBottom: 24 }}>
