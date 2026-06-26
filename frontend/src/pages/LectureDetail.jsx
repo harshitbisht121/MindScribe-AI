@@ -64,7 +64,7 @@ export const LectureDetail = ({ lectureId, onBack, fetchLectures }) => {
   const isProcessing = status === "processing" || status === "transcribed";
   const progress = lecture?.progress || {};
   const processSteps = [
-    { key: "transcript", label: "Transcribing audio" },
+    { key: "transcript", label: (!progress.transcript && lecture?.progress_message) ? lecture.progress_message : "Transcribing audio" },
     { key: "notes", label: "Generating notes" },
     { key: "flashcards", label: "Creating flashcards" },
     { key: "quiz", label: "Building quiz" },
@@ -120,9 +120,18 @@ export const LectureDetail = ({ lectureId, onBack, fetchLectures }) => {
           <ProgressBar value={overallProgress} color={colors.accent} />
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginTop: 14 }}>
             {processSteps.map(step => (
-              <div key={step.key} style={{ display: "flex", alignItems: "center", gap: 8, color: progress[step.key] ? colors.green : colors.textDim, fontSize: 13 }}>
-                {progress[step.key] ? <Icon name="check" size={14} color={colors.green} /> : <Icon name="spinner" size={14} />}
-                {step.label}
+              <div key={step.key} style={{ display: "flex", alignItems: "center", gap: 8, opacity: (progress[step.key] || (step.key === "transcript" && lecture?.progress_message)) ? 1 : 0.5, fontSize: 13 }}>
+                {progress[step.key] === "error" ? (
+                  <Icon name="x" size={14} color={colors.red} />
+                ) : progress[step.key] === true ? (
+                  <Icon name="check" size={14} color={colors.green} />
+                ) : (
+                  <Icon name="spinner" size={14} />
+                )}
+                <span style={{ color: progress[step.key] === "error" ? colors.red : (progress[step.key] === true ? colors.green : colors.textDim) }}>
+                  {step.label}
+                  {progress[step.key] === "error" ? " (Rate Limited)" : ""}
+                </span>
               </div>
             ))}
           </div>

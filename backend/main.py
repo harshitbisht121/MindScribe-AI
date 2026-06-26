@@ -163,71 +163,7 @@ async def generate_with_groq(prompt: str, system: str = "") -> str:
         return response.json()["choices"][0]["message"]["content"]
     raise HTTPException(status_code=429, detail="Rate limit exceeded")
 
-async def get_youtube_transcript(url: str, language: str = "en") -> dict:
-    video_id_match = re.search(r'(?:v=|youtu\.be/)([a-zA-Z0-9_-]{11})', url)
-    if not video_id_match:
-        raise HTTPException(status_code=400, detail="Invalid YouTube URL")
-    video_id = video_id_match.group(1)
-    
-    try:
-        from youtube_transcript_api import YouTubeTranscriptApi
-        def fetch():
-            transcript_list = YouTubeTranscriptApi().list(video_id)
-            try:
-                transcript = transcript_list.find_transcript([language, 'en', 'hi'])
-            except Exception:
-                transcript = list(transcript_list)[0]
-            data = transcript.fetch()
-            def get_val(obj, key): return getattr(obj, key) if hasattr(obj, key) else obj.get(key, 0 if key in ['start', 'duration'] else '')
-            full_text = ' '.join([get_val(item, 'text') for item in data])
-            segments = [{"start": get_val(item, 'start'), "end": get_val(item, 'start') + get_val(item, 'duration'), "text": get_val(item, 'text')} for item in data[:50]]
-            return {"text": full_text, "segments": segments, "video_id": video_id, "duration": get_val(data[-1], 'start') if data else 0}
-        return await asyncio.get_event_loop().run_in_executor(None, fetch)
-    except Exception as e:
-        if not GROQ_API_KEY:
-            return {"text": f"Demo YouTube transcript for {video_id}", "segments": [], "video_id": video_id, "duration": 600, "source": "demo"}
-            
-        # FALLBACK: Use yt-dlp + Groq transcription
-        try:
-            import yt_dlp
-            
-            def download_audio():
-                temp_dir = tempfile.gettempdir()
-                out_tmpl = os.path.join(temp_dir, f'{video_id}_%(id)s.%(ext)s')
-                ydl_opts = {
-                    'format': 'worstaudio[ext=m4a]/worstaudio/bestaudio',
-                    'outtmpl': out_tmpl,
-                    'noplaylist': True,
-                    'quiet': True,
-                    'rm_cachedir': True,
-                }
-                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                    info = ydl.extract_info(url, download=False)
-                    duration = info.get('duration', 0)
-                    
-                    # 45 mins limit (~25MB audio limit for Groq)
-                    if duration > 45 * 60:
-                        raise ValueError(f"Video is too long ({int(duration/60)} mins). Max duration is 45 minutes for AI processing.")
-                    
-                    info = ydl.extract_info(url, download=True)
-                    return ydl.prepare_filename(info), duration
-                    
-            audio_path, duration = await asyncio.get_event_loop().run_in_executor(None, download_audio)
-            
-            try:
-                transcript_result = await transcribe_with_groq(audio_path, language)
-                transcript_result["video_id"] = video_id
-                if not transcript_result.get("duration"):
-                    transcript_result["duration"] = duration
-                return transcript_result
-            finally:
-                if os.path.exists(audio_path):
-                    try:
-                        os.remove(audio_path)
-                    except Exception:
-                        pass
-        except Exception as fallback_e:
-            raise HTTPException(status_code=400, detail=f"Could not retrieve transcript directly, and fallback transcription failed. Error: {str(fallback_e)}")
+# get_youtube_transcript has been refactored into services/transcript_manager.py
 
 @app.get("/")
 async def root():
@@ -466,15 +402,38 @@ async def process_transcription(user_id: str, lecture_id: str, file_path: str, l
 async def process_youtube_transcript(user_id: str, lecture_id: str, url: str, language: str):
     doc_ref = get_lecture_doc(user_id, lecture_id)
     try:
-        result = await get_youtube_transcript(url, language)
+        from services.transcript_manager import TranscriptManager
+        manager = TranscriptManager(db=db)
         
-        video_id = result.get("video_id", "")
+        async def progress_callback(message: str):
+            # Update the progress_message in firestore to inform the frontend
+            doc_ref.update({"progress_message": message})
+            
+        result = await manager.get_transcript(url, language, progress_callback)
+        
+        video_id = result.video_id
         current_title = doc_ref.get().to_dict().get("title", "")
         new_title = f"YouTube Lecture ({video_id})" if current_title.startswith("YouTube: ") and video_id else current_title
             
         progress = doc_ref.get().to_dict().get("progress", {})
         progress["transcript"] = True
-        doc_ref.update({"transcript": result.get("text", ""), "segments": result.get("segments", []), "duration": result.get("duration", 0), "title": new_title, "status": "transcribed", "progress": progress})
+        
+        # Update with new metadata fields required by the user
+        doc_ref.update({
+            "transcript": result.transcript, 
+            "segments": result.segments, 
+            "duration": result.duration, 
+            "title": new_title, 
+            "status": "transcribed", 
+            "progress": progress,
+            "progress_message": "Generating notes...",
+            # Metadata additions
+            "transcript_provider": result.provider,
+            "transcript_source": result.source,
+            "transcript_language": result.language,
+            "processing_time": result.processing_time,
+            "fallback_count": result.fallback_count
+        })
         
         await generate_content_task(user_id, lecture_id, "notes", language)
         await generate_content_task(user_id, lecture_id, "mindmap", language)
@@ -492,6 +451,16 @@ async def generate_content_task(user_id: str, lecture_id: str, content_type: str
         transcript = lecture.get("transcript", "")
         lang_instruction = "Respond in Hindi (Devanagari script) where appropriate." if language == "hi" else ""
         
+        # Determine current message
+        msg_map = {
+            "notes": "Generating notes...",
+            "flashcards": "Generating flashcards...",
+            "quiz": "Building quiz...",
+            "mindmap": "Creating mind map..."
+        }
+        if content_type in msg_map:
+            doc_ref.update({"progress_message": msg_map[content_type]})
+            
         if content_type == "notes":
             prompt = f"Create comprehensive, well-structured study notes from this lecture transcript.\n\n{lang_instruction}\n\nFormat with:\n- Main topic headings (##)\n- Subheadings (###)\n- Bullet points for key concepts\n- Bold important terms\n- Tables where appropriate\n- Exam tips at the end\n\nTranscript:\n{transcript[:3000]}"
             result = await generate_with_groq(prompt, "You are an expert educational content creator specializing in creating structured study notes.")
@@ -582,6 +551,14 @@ async def generate_content_task(user_id: str, lecture_id: str, content_type: str
             
     except Exception as e:
         print(f"Content generation error for {lecture_id}/{content_type}: {e}")
+        try:
+            # Mark the specific progress step as "error" instead of silently failing
+            lecture = doc_ref.get().to_dict()
+            progress = lecture.get("progress", {})
+            progress[content_type] = "error"
+            doc_ref.update({"progress": progress})
+        except Exception as inner_e:
+            print(f"Failed to update error status for {lecture_id}/{content_type}: {inner_e}")
 
 if __name__ == "__main__":
     import uvicorn
