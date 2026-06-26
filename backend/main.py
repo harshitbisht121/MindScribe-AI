@@ -504,10 +504,27 @@ async def generate_content_task(user_id: str, lecture_id: str, content_type: str
             result = await generate_with_groq(prompt, "You are an expert at creating educational flashcards. Always respond with valid JSON only.")
             cleaned = result.strip()
             if "```" in cleaned: cleaned = re.sub(r'```(?:json)?\n?', '', cleaned).strip().rstrip('`')
-            try: flashcards = json.loads(cleaned)
+            
+            flashcards = []
+            try:
+                parsed = json.loads(cleaned)
+                if isinstance(parsed, dict):
+                    for v in parsed.values():
+                        if isinstance(v, list):
+                            flashcards = v
+                            break
+                elif isinstance(parsed, list):
+                    flashcards = parsed
             except:
+                pass
+                
+            if not flashcards:
                 match = re.search(r'\[.*\]', cleaned, re.DOTALL)
-                flashcards = json.loads(match.group()) if match else [{"front": "Concept", "back": "See transcript for details", "topic": "General"}]
+                try:
+                    flashcards = json.loads(match.group()) if match else [{"front": "Concept", "back": "See transcript for details", "topic": "General"}]
+                except:
+                    flashcards = [{"front": "Concept", "back": "See transcript for details", "topic": "General"}]
+                    
             progress = lecture.get("progress", {})
             progress["flashcards"] = True
             doc_ref.update({"flashcards": flashcards, "progress": progress})
@@ -517,10 +534,27 @@ async def generate_content_task(user_id: str, lecture_id: str, content_type: str
             result = await generate_with_groq(prompt, "You are an expert at creating educational quizzes. Always respond with valid JSON only.")
             cleaned = result.strip()
             if "```" in cleaned: cleaned = re.sub(r'```(?:json)?\n?', '', cleaned).strip().rstrip('`')
-            try: quiz = json.loads(cleaned)
+            
+            quiz = []
+            try:
+                parsed = json.loads(cleaned)
+                if isinstance(parsed, dict):
+                    for v in parsed.values():
+                        if isinstance(v, list):
+                            quiz = v
+                            break
+                elif isinstance(parsed, list):
+                    quiz = parsed
             except:
+                pass
+                
+            if not quiz:
                 match = re.search(r'\[.*\]', cleaned, re.DOTALL)
-                quiz = json.loads(match.group()) if match else []
+                try:
+                    quiz = json.loads(match.group()) if match else []
+                except:
+                    quiz = []
+                    
             progress = lecture.get("progress", {})
             progress["quiz"] = True
             doc_ref.update({"quiz": quiz, "progress": progress})
