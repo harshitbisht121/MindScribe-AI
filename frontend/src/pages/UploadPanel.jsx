@@ -9,11 +9,14 @@ export const UploadPanel = ({ onSuccess }) => {
   const [mode, setMode] = useState("file");
   const [file, setFile] = useState(null);
   const [ytUrl, setYtUrl] = useState("");
+  const [transcriptText, setTranscriptText] = useState("");
   const [language, setLanguage] = useState("en");
   const [title, setTitle] = useState("");
   const [loading, setLoading] = useState(false);
   const [drag, setDrag] = useState(false);
   const fileRef = useRef();
+
+  const getWordCount = (text) => text.trim().split(/\s+/).filter(w => w.length > 0).length;
 
   const handleUpload = async () => {
     setLoading(true);
@@ -23,6 +26,8 @@ export const UploadPanel = ({ onSuccess }) => {
         result = await api.uploadFile(file, language, title);
       } else if (mode === "youtube" && ytUrl) {
         result = await api.processYoutube(ytUrl, language, title);
+      } else if (mode === "paste" && getWordCount(transcriptText) >= 100) {
+        result = await api.processPastedTranscript(transcriptText, language, title);
       }
       if (result?.lecture_id) onSuccess(result.lecture_id);
     } catch (e) {
@@ -37,12 +42,12 @@ export const UploadPanel = ({ onSuccess }) => {
     if (f) setFile(f);
   };
 
-  const canSubmit = mode === "file" ? !!file : !!ytUrl;
+  const canSubmit = mode === "file" ? !!file : mode === "youtube" ? !!ytUrl : mode === "paste" ? getWordCount(transcriptText) >= 100 : false;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <div className="mode-switcher" style={{ background: colors.bg, borderRadius: 10, padding: 4 }}>
-        {[{ id: "file", label: "Upload File", icon: "upload" }, { id: "youtube", label: "YouTube URL", icon: "youtube" }, { id: "live", label: "Live Lecture", icon: "mic" }].map(m => (
+      <div className="mode-switcher wrap-on-mobile" style={{ background: colors.bg, borderRadius: 10, padding: 4, display: "flex" }}>
+        {[{ id: "file", label: "Upload File", icon: "upload" }, { id: "youtube", label: "YouTube URL", icon: "youtube" }, { id: "paste", label: "Paste Transcript", icon: "clipboard" }, { id: "live", label: "Live Lecture", icon: "mic" }].map(m => (
           <button key={m.id} onClick={() => setMode(m.id)} style={{
             flex: 1, padding: "10px 12px", borderRadius: 8, border: "none", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontSize: 13, fontWeight: 500, transition: "all 0.2s",
             background: mode === m.id ? colors.accent : "transparent",
@@ -84,8 +89,38 @@ export const UploadPanel = ({ onSuccess }) => {
             value={ytUrl} onChange={e => setYtUrl(e.target.value)} placeholder="https://youtube.com/watch?v=..."
             style={{ background: colors.bg, border: `1px solid ${colors.border}`, borderRadius: 10, padding: "12px 16px", color: colors.text, fontSize: 14, outline: "none", width: "100%", boxSizing: "border-box" }}
           />
-          <div style={{ color: colors.textMuted, fontSize: 12, display: "flex", alignItems: "center", gap: 6 }}>
-            <Icon name="youtube" size={14} color="#FF0000" /> Supports any YouTube lecture video with captions
+          <div style={{ color: colors.textMuted, fontSize: 12, display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap", justifyContent: "space-between" }}>
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <Icon name="youtube" size={14} color="#FF0000" /> Supports any YouTube lecture video with captions
+            </span>
+            <span style={{ color: colors.accent, cursor: "pointer", fontWeight: 500 }} onClick={() => setMode("paste")}>
+              Transcript retrieval failed? Paste Transcript Instead
+            </span>
+          </div>
+        </div>
+      )}
+
+      {mode === "paste" && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <div style={{ background: colors.bg, padding: 12, borderRadius: 10, border: `1px solid ${colors.border}`, fontSize: 13, color: colors.textMuted }}>
+            <strong style={{ color: colors.text }}>How to get a YouTube transcript:</strong>
+            <ol style={{ margin: "8px 0 0 0", paddingLeft: 24, lineHeight: 1.6 }}>
+              <li>Open the YouTube video.</li>
+              <li>Click "... More".</li>
+              <li>Select "Show Transcript".</li>
+              <li>Copy the transcript.</li>
+              <li>Paste it below.</li>
+            </ol>
+          </div>
+          <textarea
+            value={transcriptText} onChange={e => setTranscriptText(e.target.value)} placeholder="Paste your transcript here..."
+            style={{ background: colors.bg, border: `1px solid ${colors.border}`, borderRadius: 10, padding: "12px 16px", color: colors.text, fontSize: 14, outline: "none", width: "100%", boxSizing: "border-box", minHeight: 180, resize: "vertical", fontFamily: "inherit" }}
+          />
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, color: colors.textMuted }}>
+            <span>{getWordCount(transcriptText)} words / {transcriptText.length} characters</span>
+            {getWordCount(transcriptText) > 0 && getWordCount(transcriptText) < 100 && (
+              <span style={{ color: colors.red }}>Requires at least 100 words</span>
+            )}
           </div>
         </div>
       )}

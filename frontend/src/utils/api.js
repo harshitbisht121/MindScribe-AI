@@ -45,6 +45,14 @@ export const api = {
     });
     return r.json();
   },
+  async processPastedTranscript(transcript, language, title) {
+    const r = await fetch(`${API_BASE}/api/paste`, {
+      method: "POST",
+      headers: await getHeaders(),
+      body: JSON.stringify({ transcript, language, title }),
+    });
+    return r.json();
+  },
   async generate(lectureId, contentType, language = "en") {
     const r = await fetch(`${API_BASE}/api/generate`, {
       method: "POST",

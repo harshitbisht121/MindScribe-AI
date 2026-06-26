@@ -100,6 +100,22 @@ class ProgressUpdateRequest(BaseModel):
     mastered_flashcards: Optional[List[int]] = None
     completed: Optional[bool] = None
 
+class PasteTranscriptRequest(BaseModel):
+    transcript: str
+    language: str = "en"
+    title: Optional[str] = None
+
+async def run_downstream_pipeline_task(user_id: str, lecture_id: str, language: str):
+    doc_ref = get_lecture_doc(user_id, lecture_id)
+    try:
+        await generate_content_task(user_id, lecture_id, "notes", language)
+        await generate_content_task(user_id, lecture_id, "mindmap", language)
+        await generate_content_task(user_id, lecture_id, "flashcards", language)
+        await generate_content_task(user_id, lecture_id, "quiz", language)
+        doc_ref.update({"status": "complete"})
+    except Exception as e:
+        doc_ref.update({"status": "error", "error": str(e)})
+
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
@@ -294,6 +310,26 @@ async def process_youtube(request: YouTubeRequest, background_tasks: BackgroundT
     background_tasks.add_task(process_youtube_transcript, user_id, lecture_id, request.url, request.language)
     return {"lecture_id": lecture_id, "status": "processing"}
 
+@app.post("/api/paste")
+async def process_paste(request: PasteTranscriptRequest, background_tasks: BackgroundTasks, user_id: str = Depends(get_current_user)):
+    lecture_id = str(uuid.uuid4())
+    title = request.title if request.title else "Pasted Transcript"
+    
+    doc_ref = get_lecture_doc(user_id, lecture_id)
+    doc_ref.set({
+        "title": title,
+        "transcript": request.transcript,
+        "language": request.language,
+        "source": "manual_transcript",
+        "created_at": datetime.now().isoformat(),
+        "status": "transcribed",
+        "progress": {"transcript": True, "notes": False, "flashcards": False, "quiz": False},
+        "progress_tracking": {"notes_read": False, "quiz_score": None, "quiz_total": None, "mastered_flashcards": [], "mastered_count": 0, "completed": False}
+    })
+    
+    background_tasks.add_task(run_downstream_pipeline_task, user_id, lecture_id, request.language)
+    return {"lecture_id": lecture_id, "status": "processing"}
+
 @app.patch("/api/lectures/{lecture_id}/transcript")
 async def patch_transcript(lecture_id: str, request: PatchTranscriptRequest, background_tasks: BackgroundTasks, user_id: str = Depends(get_current_user)):
     doc_ref = get_lecture_doc(user_id, lecture_id)
@@ -306,17 +342,7 @@ async def patch_transcript(lecture_id: str, request: PatchTranscriptRequest, bac
     
     language = lecture.get("language", "en")
     
-    async def run_downstream_pipeline():
-        try:
-            await generate_content_task(user_id, lecture_id, "notes", language)
-            await generate_content_task(user_id, lecture_id, "mindmap", language)
-            await generate_content_task(user_id, lecture_id, "flashcards", language)
-            await generate_content_task(user_id, lecture_id, "quiz", language)
-            doc_ref.update({"status": "complete"})
-        except Exception as e:
-            doc_ref.update({"status": "error", "error": str(e)})
-
-    background_tasks.add_task(run_downstream_pipeline)
+    background_tasks.add_task(run_downstream_pipeline_task, user_id, lecture_id, language)
     return {"lecture_id": lecture_id, "status": "processing"}
 
 @app.post("/api/lectures/{lecture_id}/progress")
