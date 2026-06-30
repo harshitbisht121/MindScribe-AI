@@ -36,10 +36,9 @@ class RapidAPITranscriptProvider(TranscriptProvider):
             "X-RapidAPI-Host": self.api_host
         }
         
-        # We assume a standard structure for the API endpoint, passing video_id and lang.
-        # This might need adjustment depending on the exact RapidAPI provider chosen.
-        endpoint = f"https://{self.api_host}/transcript"
-        params = {"video_id": video_id, "lang": lang}
+        # Using the youtube-transcript3 structure:
+        endpoint = f"https://{self.api_host}/api/transcript"
+        params = {"videoId": video_id}
 
         for attempt in range(self.max_retries):
             try:
