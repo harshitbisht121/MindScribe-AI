@@ -64,7 +64,7 @@ class RapidAPITranscriptProvider(TranscriptProvider):
                     if isinstance(data, list):
                         items = data
                     elif isinstance(data, dict):
-                        items = data.get("transcript") or data.get("captions") or data.get("data") or []
+                        items = data.get("content") or data.get("transcript") or data.get("captions") or data.get("data") or []
                     else:
                         items = []
 
